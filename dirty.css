@@ -93,6 +93,12 @@ body {
     opacity: 0.4;
 }
 
+code {
+    color: #9B456F;
+    position: relative;
+    top: -1px;
+}
+
 /* ------------------------------svg face animation------------------------- */
 
 .face-block {
@@ -525,6 +531,21 @@ label:nth-of-type(5) {
 }
 
 .wave__one {
+    background: url("wave_top.png") repeat-x;
+    background-size: contain;
+    width: 7000px;
+    height: 65px;
+    animation: waves 20s infinite linear;
+    margin-top: 17px;
+    position: relative;
+    top: 0;
+    z-index: 11;
+    opacity: 0.8;
+    -webkit-filter: drop-shadow(4px 1px 8px red);
+    filter: drop-shadow(12px 1px 8px red);
+}
+
+.wave__one {
     background: url("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=18c70K41BxcfoZiWcN3tegBYx0f8ik6Gd") repeat-x;
     background-size: contain;
     width: 7000px;
@@ -577,10 +598,5 @@ label:nth-of-type(5) {
         margin-left: -581px;
     }
 }
-
-
-
-
-
 
 
