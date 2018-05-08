@@ -5,10 +5,10 @@
             <title>Мой блог! | Maxi-Boxi</title>
             <meta charset="utf-8">
             <meta name="description" content="Блог о моём обучении программированию">
-            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
             <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
             <link rel="stylesheet" type="text/css" href="dirty.css">
             <link rel="shortcut icon" href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1GY0BaBT47WAOdXPN6jJxuCU3reCO-Igg" type="image/x-icon">
+           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         </head>
 
         <body>
@@ -31,6 +31,49 @@
 
 
             <div class="page-tab"><!-- Start page-tab 1-->
+
+                <article class="blog-post">
+
+                    <section class="post-heading">
+                        <h2>Пост №3 | Вкладки и волны</h2>
+                    </section>
+
+                    <section class="post-body">
+
+                        <p>Захотелось сделать разделы (вкладки) в блоге не используя скрипты, чтобы все было в одном
+                            <b>html</b> файле. Сначала попробовал с помощью псевдокласса <a
+                                    href="https://habr.com/post/223583/" target="_blank" title="Ссылка на статью">:target</a>,
+                            но при переходе по
+                            ссылкам
+                            табов появился прыгающий эффект вертикального скролла, т.к. ссылки ведут к определённой
+                            части страницы. Второй вариант - использование <a href="https://habr.com/post/138020/"
+                                                                               target="_blank" title="Ссылка на статью">:checked</a>
+                            , но тут
+                            тоже свои нюансы – элементы
+                            <code>input</code> и блоки с контентом, которые с помощью свойства <code>display</code>
+                            будут скрываться и
+                            отображаться, должны быть соседними, т.е. иметь общего родителя. Поэтому пришлось отказаться
+                            от тега <code>&lt;nav&gt;</code> и перекроить навигацию.
+                        </p>
+
+                        <p>Добавил <a href="https://www.youtube.com/watch?v=tJI0YO-IZaE" title="Ссылка на ютуб"
+                                      target="_blank">волны</a> в футтер. Дальше хочу попрактиковаться в верстке сайтов
+                            по макетам, а
+                            потом перейти к изучению <b><abbr title="JavaScript —  мультипарадигменный язык
+                        программирования">JS</abbr></b>. И музыку в студию  \-(^_^)-/ !
+                        </p>
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/track=4135593935/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" ></iframe>
+
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-05-08 13:00">08-05-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #4-->
 
                 <article class="blog-post">
 
@@ -90,13 +133,13 @@
                     </section>
 
                     <section class="post-body">
-                        <p>Закончил курс по <strong><abbr
+                        <p>Закончил курс на Sololearn по <strong><abbr
                                 title="HyperText Markup Language — язык гипертекстовой разметки">
                             HTML</abbr></strong>, в <strong><abbr
                                 title="Cascading Style Sheets — каскадные таблицы стилей">
                             СSS</abbr></strong> пока до середины дошёл, добавил адаптивности страничке с помощью медиа
                             запросов
-                            <code><span style="color: #9B456F;">@media (min-width:) and (max-width:)</span></code> вроде
+                            <code>@media (min-width:) and (max-width:)</code> вроде
                             теперь при
                             уменьшении окна браузера ширина блоков подстраивается.</p>
                         <p>Скорее всего я не совсем правильно сделал это, но позже разберусь… также добавил тени к
@@ -126,7 +169,7 @@
                     <section class="post-body">
                         <p>Решил начать изучать языки программирования, чтобы заполнить свободное время полезным делом.
                             До этого
-                            обычно занимал просмотром фильмов и играми, но сейчас всё приелось. Начал с самого простого
+                            обычно проводил за просмотром фильмов и онлайн играми, но сейчас всё приелось. Начал с самого простого
                             – <b><abbr
                                     title="HyperText Markup Language — язык гипертекстовой разметки"> HTML</abbr></b> и
                             <b><abbr
@@ -172,8 +215,8 @@
                     </section>
 
                     <section class="post-body">
-                        <p style="font-size: 80px; color: #aaaaaa"><code>Этот раздел пока пуст...
-                        </code></p>
+                        <p style="font-size: 80px; color: #aaaaaa">Этот раздел пока пуст...
+                        </p>
 
                     </section>
 
@@ -197,8 +240,8 @@
                     </section>
 
                     <section class="post-body">
-                        <p style="font-size: 80px; color: #aaaaaa"><code>Этот раздел пока пуст...
-                        </code></p>
+                        <p style="font-size: 80px; color: #aaaaaa">Этот раздел пока пуст...
+                        </p>
 
                     </section>
 
@@ -222,8 +265,8 @@
                     </section>
 
                     <section class="post-body">
-                        <p style="font-size: 80px; color: #aaaaaa"><code>Этот раздел пока пуст...
-                        </code></p>
+                        <p style="font-size: 80px; color: #aaaaaa">Этот раздел пока пуст...
+                        </p>
 
                     </section>
 
@@ -247,8 +290,8 @@
                     </section>
 
                     <section class="post-body">
-                        <p style="font-size: 80px; color: #aaaaaa"><code>Этот раздел пока пуст...
-                        </code></p>
+                        <p style="font-size: 80px; color: #aaaaaa">Этот раздел пока пуст...
+                        </p>
 
                     </section>
 
