@@ -531,7 +531,7 @@ label:nth-of-type(5) {
 }
 
 .wave__one {
-    background: url("wave_top.png") repeat-x;
+    background: url(wave_top.svg) repeat-x;
     background-size: contain;
     width: 7000px;
     height: 65px;
@@ -540,52 +540,37 @@ label:nth-of-type(5) {
     position: relative;
     top: 0;
     z-index: 11;
-    opacity: 0.8;
+    opacity: 0.5;
     -webkit-filter: drop-shadow(4px 1px 8px red);
     filter: drop-shadow(12px 1px 8px red);
 }
 
-.wave__one {
-    background: url("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=18c70K41BxcfoZiWcN3tegBYx0f8ik6Gd") repeat-x;
-    background-size: contain;
-    width: 7000px;
-    height: 65.4px;
-    animation: waves 20s infinite linear;
-    margin-top: 17px;
-    position: relative;
-    top: 0;
-    z-index: 11;
-    opacity: 0.6;
-    -webkit-filter: drop-shadow(12px 1px 8px red);
-    filter: drop-shadow(12px 1px 8px red);
-}
-
 .wave__two {
-    background: url("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=18c70K41BxcfoZiWcN3tegBYx0f8ik6Gd") repeat-x;
+    background: url(wave_top.svg) repeat-x;
     background-size: contain;
     width: 7000px;
-    height: 65.4px;
+    height: 65px;
     animation: waves 15s infinite linear;
-    opacity: 0.3;
+    opacity: 0.4;
     position: absolute;
     margin-top: 17px;
     top: 0;
-    z-index: 13;
+    z-index: 12;
     -webkit-filter: drop-shadow(4px 1px 8px #19eb00);
     filter: drop-shadow(4px 1px 8px #19eb00);
 }
 
 .wave__three {
-    background: url("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=18c70K41BxcfoZiWcN3tegBYx0f8ik6Gd") repeat-x;
+    background: url(wave_top.svg) repeat-x;
     background-size: contain;
     width: 7000px;
-    height: 65.4px;
+    height: 65px;
     animation: waves 10s infinite linear;
-    opacity: 0.2;
+    opacity: 0.3;
     position: absolute;
     margin-top: 17px;
     top: 0;
-    z-index: 9;
+    z-index: 13;
     -webkit-filter: drop-shadow(4px 1px 8px #5146ff);
     filter: drop-shadow(4px 1px 8px #5146ff);
 }
@@ -598,5 +583,10 @@ label:nth-of-type(5) {
         margin-left: -581px;
     }
 }
+
+
+
+
+
 
 
