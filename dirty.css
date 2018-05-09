@@ -534,7 +534,7 @@ label:nth-of-type(5) {
     background: url(wave_top.svg) repeat-x;
     background-size: contain;
     width: 7000px;
-    height: 65px;
+    height: 65.4px;
     animation: waves 20s infinite linear;
     margin-top: 17px;
     position: relative;
@@ -549,7 +549,7 @@ label:nth-of-type(5) {
     background: url(wave_top.svg) repeat-x;
     background-size: contain;
     width: 7000px;
-    height: 65px;
+    height: 65.4px;
     animation: waves 15s infinite linear;
     opacity: 0.4;
     position: absolute;
@@ -564,7 +564,7 @@ label:nth-of-type(5) {
     background: url(wave_top.svg) repeat-x;
     background-size: contain;
     width: 7000px;
-    height: 65px;
+    height: 65.4px;
     animation: waves 10s infinite linear;
     opacity: 0.3;
     position: absolute;
@@ -580,7 +580,7 @@ label:nth-of-type(5) {
         margin-left: 0;
     }
     100%{
-        margin-left: -581px;
+        margin-left: -581.4px;
     }
 }
 
