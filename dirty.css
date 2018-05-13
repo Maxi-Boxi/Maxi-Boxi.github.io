@@ -50,7 +50,7 @@ body {
     height: 87px;
 }
 
-.footer-copyright{
+.footer-copyright {
     position: relative;
     top: 30px;
     z-index: 12;
@@ -85,6 +85,11 @@ body {
     text-align: right;
     font-style: italic;
     color: #ccc;
+}
+
+time:hover {
+    font-size: 13px;
+    color: #333;
 }
 
 .line-hr {
@@ -315,14 +320,14 @@ a:active {
 }
 
 @media (min-width: 560px) {
-    .modal, .modal a{
+    .modal, .modal a {
         width: 70%;
         font-size: 2.2vmax;
     }
 }
 
 @media (max-width: 559px) {
-    .modal, .modal a{
+    .modal, .modal a {
         font-size: 2.2vmax;
         width: 100%;
         padding: 20px 0;
@@ -363,7 +368,7 @@ a:active {
 
 /* ---------------------content list style----------------- */
 
-.post-body ul{
+.post-body ul {
     text-indent: 10px;
     list-style: none;
     padding-top: 10px;
@@ -377,25 +382,25 @@ a:active {
     padding-right: 15px;
 }
 
-.post-body li:nth-of-type(1){
-    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/DWS.png")no-repeat left center;
+.post-body li:nth-of-type(1) {
+    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/DWS.png") no-repeat left center;
 
 }
 
-.post-body li:nth-of-type(2){
-    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/DB.png")no-repeat left center;
+.post-body li:nth-of-type(2) {
+    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/DB.png") no-repeat left center;
 }
 
-.post-body li:nth-of-type(3){
-    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/sof.ico")no-repeat left center;
+.post-body li:nth-of-type(3) {
+    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/sof.ico") no-repeat left center;
 }
 
-.post-body li:nth-of-type(4){
-    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/vicon.ico")no-repeat left center;
+.post-body li:nth-of-type(4) {
+    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/vicon.ico") no-repeat left center;
 }
 
-.post-body li:nth-of-type(5){
-    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/fav.ico")no-repeat left center;
+.post-body li:nth-of-type(5) {
+    background: url("https://maxi-boxi.github.io/maxiboxi.github.io/images/fav.ico") no-repeat left center;
 }
 
 .post-body ul a {
@@ -504,16 +509,18 @@ label:nth-of-type(5) {
     label {
         font-size: 13px;
     }
-    
+
 }
 
 @media (max-width: 470px) {
     #navigat-block {
         min-height: 40px;
     }
+
     label:nth-of-type(2) {
         top: 144px;
     }
+
     label:nth-of-type(4) {
         top: 144px;
     }
@@ -579,14 +586,187 @@ label:nth-of-type(5) {
     0% {
         margin-left: 0;
     }
-    100%{
+    100% {
         margin-left: -581.4px;
     }
 }
 
+/*-----------------------------Football Table-------------------------*/
 
+.football {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 14px;
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 15px 0 28px 0;
+    table-layout: fixed;
+}
 
+.football th {
+    font-weight: normal;
+    color: #838383;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 7px 0;
+    width: 25px;
+    min-width: 25px;
+}
 
+th.gruppa {
+    position: relative;
+    color: #212121;
+    font-size: 12px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60%;
+}
 
+@media (max-width: 336px) {
+    .football .gruppa {
+        width: 30px;
+    }
+}
 
+@media (max-width: 369px) {
+    .football .gruppa:after {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-left: 8px;
+        background: #fff;
+        font-size: 14px;
+        content: 'A';
+    }
 
+    .football .name-team:after {
+        position: absolute;
+        top: 10px;
+        left: 23px;
+        right: 0;
+        bottom: 0;
+        padding-left: 8px;
+        background-color: #fff;
+        font-size: 14px;
+        content: '';
+    }
+}
+
+.football td {
+    color: #212121;
+    padding: 9px 2px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.football tr:last-child td {
+    border-bottom: none;
+}
+
+.football .name-team {
+    position: relative;
+    text-align: left;
+    padding-left: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 51;
+}
+
+.football tr.team-cup:hover, .football tr.team-cup:hover .name-team:after {
+    background-color: #FAFAFA;
+}
+
+.football tr:nth-of-type(2) .name-team,
+#egypt {
+    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/lYah1Uqw37XdicC6C4HNqg_48x48.png") no-repeat left center;
+    background-size: 24px;
+}
+
+.football tr:nth-of-type(3) .name-team,
+#russia,
+.russia tr:nth-of-type(2) .name-team {
+    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/5Y6kOqiOIv2C1sP9C_BWtA_48x48.png") no-repeat left center;
+    background-size: 24px;
+}
+
+.football tr:nth-of-type(4) .name-team,
+.russia tr:nth-of-type(3) .name-team {
+    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/QoAJxO46fHid3_T-7nRZ0Q_48x48.png") no-repeat left center;
+    background-size: 24px;
+}
+
+.football tr:nth-of-type(5) .name-team,
+#uruguay {
+    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/KnSUdQWiGRoy89q4x85IgA_48x48.png") no-repeat left center;
+    background-size: 24px;
+}
+
+#logo-cup2018 {
+    width: 100%;
+    text-align: center;
+}
+
+#logo-cup2018 img {
+    width: 90px;
+
+}
+
+/*-------------------------WC 2018 time and date tables--------------------*/
+
+.russia {
+    position: relative;
+    z-index: 55;
+    color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 14px;
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+    border-top: 1px solid #E0E0E0;
+}
+
+th.game-desc {
+    color: #a8a8a8;
+    font-size: 12px;
+    padding-bottom: 15px;
+    width: 40%;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.timegame {
+    border-left: 1px solid #F2F2F2;
+    width: 10%;
+    white-space: nowrap;
+}
+
+.russia .name-team {
+    color: #212121;
+    text-align: left;
+    padding: 9px 2px 9px 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.russia tr:last-child td {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.clock-info {
+    font-size: 12px;
+    display: inline-block;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.russia:hover {
+    background-color: #FAFAFA;
+}
