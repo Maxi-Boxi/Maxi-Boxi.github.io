@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+        <head>
+            <title>Мой блог! | Maxi-Boxi</title>
+            <meta charset="utf-8">
+            <meta name="description" content="Блог о моём обучении программированию">
+            <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+            <link rel="stylesheet" type="text/css" href="dirty.css">
+            <link rel="shortcut icon" href="https://maxi-boxi.github.io/blog/images/favicon.ico" type="image/x-icon">
+           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+            <!--Fonts-->
+           <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
+        </head>
+
+        <body>
+
+        <div id="container">
+
+            <header id="header">
+                <div class="header-back">
+                    <img src="https://maxi-boxi.github.io/blog/images/header-back.svg"
+                         title="Нарисовано на editor.method.ac">
+                </div>
+            </header> <!-- end header-->
+
+            <div id="navigat-block"></div>
+                <input type="radio" id="tab1" name="tabs" checked="checked"/><label class="pulse" for="tab1">Главная</label>
+                <input type="radio" id="tab2" name="tabs"/><label class="pulse" for="tab2">Музыка</label>
+                <input type="radio" id="tab3" name="tabs"/><label class="pulse" for="tab3">Фильмы</label>
+                <input type="radio" id="tab4" name="tabs"/><label class="pulse" for="tab4">Спорт</label>
+                <input type="radio" id="tab5" name="tabs"/><label class="pulse" for="tab5">Архив</label>
+
+
+            <div class="page-tab"><!-- Start page-tab 1-->
+
+                <article class="blog-post">
+
+                    <section class="post-heading">
+                        <h2>Пост №4 | Вкладки и волны</h2>
+                    </section>
+
+                    <section class="post-body">
+
+                        <p>Захотелось сделать разделы (вкладки) в блоге не используя скрипты, чтобы все было в одном
+                            <b>html</b> файле. Сначала попробовал с помощью псевдокласса <a
+                                    href="https://habr.com/post/223583/" target="_blank" title="Ссылка на статью">:target</a>,
+                            но при переходе по
+                            ссылкам
+                            табов появился прыгающий эффект вертикального скролла, т.к. ссылки ведут к определённой
+                            части страницы. Второй вариант - использование <a href="https://habr.com/post/138020/"
+                                                                               target="_blank" title="Ссылка на статью">:checked</a>
+                            , но тут
+                            тоже свои нюансы – элементы
+                            <code>input</code> и блоки с контентом, которые с помощью свойства <code>display</code>
+                            будут скрываться и
+                            отображаться, должны быть соседними, т.е. иметь общего родителя. Поэтому пришлось отказаться
+                            от тега <code>&lt;nav&gt;</code> и перекроить навигацию.
+                        </p>
+
+                        <p>Добавил <a href="https://www.youtube.com/watch?v=tJI0YO-IZaE" title="Ссылка на ютуб"
+                                      target="_blank">волны</a> в футтер. Дальше хочу попрактиковаться в верстке сайтов
+                            по макетам, а
+                            потом перейти к изучению <b><abbr title="JavaScript —  мультипарадигменный язык
+                        программирования">JS</abbr></b>. Музыку в студию  \(^_^)/ !
+                        </p>
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/track=4135593935/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" ></iframe>
+
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-05-08 13:00">08-05-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #4-->
+
+                <article class="blog-post">
+
+                    <section class="post-heading">
+                        <h2>Пост №3 | CSS анимация, SVG, практика</h2>
+                    </section>
+
+                    <section class="post-body">
+                        <p>Закончил курс по <strong><abbr title="Cascading Style Sheets — каскадные таблицы стилей">
+                            СSS</abbr></strong> и начал было <strong><abbr title="JavaScript —  мультипарадигменный язык
+                        программирования">JS</abbr></strong> изучать, но решил отложить пока и закрепить полученные
+                            знания на практике.
+                            Установил <a href="https://rutracker.org/forum/viewtopic.php?t=5431405"
+                                         title="Ссылка на торрент" target="_blank">PHPStorm</a>, вроде как
+                            более удобный и функциональный редактор, нежели Sublime Text.
+                            На ютубе нашёл пару интересных уроков. Добавил <a target="_blank"
+                                                                              title="Ссылка на ютуб"
+                                                                              href="https://www.youtube.com/watch?v=e_N8QXHweQk">импульсный
+                                эффект</a>
+                            к ссылкам навигации, прячущийся <strong><abbr
+                                    title="Scalable Vector Graphics — масштабируемая векторная графика">SVG
+                            </abbr></strong> смайл внизу странички с небольшой анимацией, а также модальное окно,
+                            которое всплывает при нажатии на изображение в 1 посте.
+                        </p>
+                        <ul>
+
+                            <li><a href="https://www.youtube.com/channel/UCTgx8cZRD5Jz2_zGaT27S3w" target="_blank">DWS
+                                TV - Уроки по WEB разработкам</a></li>
+
+                            <li><a href="https://www.youtube.com/channel/UCe_H8hzx9WV7Ca7Ps5gt72Q" target="_blank">Web
+                                Developer Blog</a></li>
+
+                            <li><a href="https://www.youtube.com/channel/UCIIt69f5D44s2cdb9vXQNzA" target="_blank">loftblog</a>
+                            </li>
+
+                            <li><a href="http://prgssr.ru/development/tryuki-s-psevdoklassom-target.html#target-test"
+                                   target="_blank">Трюки с псевдоклассом :target</a></li>
+
+                            <li><a href="http://shpargalkablog.ru/2011/02/modalnoe-okno-css.html" target="_blank">Модальное
+                                окно (lightbox) на CSS</a></li>
+
+                        </ul>
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-04-24 23:00">24-04-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #3-->
+
+                <article class="blog-post">
+                    <section class="post-heading">
+                        <h2>Пост №2 | Навигация и адаптивность</h2>
+                    </section>
+
+                    <section class="post-body">
+                        <p>Закончил курс на Sololearn по <strong><abbr
+                                title="HyperText Markup Language — язык гипертекстовой разметки">
+                            HTML</abbr></strong>, в <strong><abbr
+                                title="Cascading Style Sheets — каскадные таблицы стилей">
+                            СSS</abbr></strong> пока до середины дошёл, добавил адаптивности страничке с помощью медиа
+                            запросов
+                            <code>@media (min-width:) and (max-width:)</code> вроде
+                            теперь при
+                            уменьшении окна браузера ширина блоков подстраивается.</p>
+                        <p>Скорее всего я не совсем правильно сделал это, но позже разберусь… также добавил тени к
+                            блокам, дату к
+                            постам, к шапке прикрепил бэкграунд в виде фонового изображения и добавил блок навигации. А
+                            сейчас
+                            музыкальная пауза \^_^/ !</p>
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3881229239/size=small/bgcol=ffffff/linkcol=0687f5/track=1650198246/transparent=true/"
+                        >
+                        </iframe>
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-04-10 15:11">10-04-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #2-->
+
+                <article class="blog-post">
+                    <section class="post-heading">
+                        <h2>Первый пост | Начало</h2>
+                    </section>
+
+                    <section class="post-body">
+                        <p>Решил начать изучать языки программирования, чтобы заполнить свободное время полезным делом.
+                            До этого
+                            обычно проводил за просмотром фильмов и онлайн играми, но сейчас всё приелось. Начал с самого простого
+                            – <b><abbr
+                                    title="HyperText Markup Language — язык гипертекстовой разметки"> HTML</abbr></b> и
+                            <b><abbr
+                                    title="Cascading Style Sheets — каскадные таблицы стилей"> СSS</abbr></b>, скачал с
+                            торрента
+                            уроки <a href="https://rutracker.org/forum/viewtopic.php?t=5360668" target="blank"
+                                     title="Ссылка на торрент">Брэда Хасси</a>, параллельно
+                            установил приложение <a
+                                    href="https://play.google.com/store/apps/details?id=com.sololearn&hl=ru"
+                                    target="blank" title="Ссылка на приложение для смартфона"><img
+                                    src="https://maxi-boxi.github.io/blog/images/solo-logo.svg"
+                                    id="sololearn">
+                            </a> .</p>
+                        <p>Заодно создал этот блог, где буду описывать ход своего обучения, практиковаться, применять
+                            полученные
+                            знания. За основу взял шаблон с 6 урока <a
+                                    href="https://rutracker.org/forum/viewtopic.php?t=5360668" target="blank"
+                                    title="Ссылка на торрент">Хасси</a>, буду добавлять новые элементы, блоки, изменять
+                            стили и т.п. по мере обучения. На данный момент страничка выглядит так:</p>
+                        <div id="v0.1" style="text-align: center;"><a href="#modal-container"
+                                                                      title="Начальный вид блога"><img
+                                src="https://maxi-boxi.github.io/blog/images/1-m.jpg" width="100" height="63"
+                                alt="Начальный вид блога"/></a></div>
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-03-22 13:11">22-03-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #1-->
+
+            </div><!-- end page-tab 1-->
+
+            <div  class="page-tab"><!-- Start page-tab 2-->
+
+                <article class="blog-post">
+
+                    <section class="post-heading">
+                        <h2>Музыка</h2>
+                    </section>
+
+                    <section class="post-body">
+                        <p style="font-size: 80px; color: #aaaaaa">Этот раздел пока пуст...
+                        </p>
+
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-04-24 23:00">24-04-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #1-->
+
+            </div> <!-- end page-tab 2-->
+
+            <div class="page-tab"><!-- Start page-tab 3-->
+
+                <article class="blog-post">
+
+                    <section class="post-heading">
+                        <h2>Кино</h2>
+                    </section>
+
+                    <section class="post-body">
+                        <p style="font-size: 80px; color: #aaaaaa">Этот раздел пока пуст...
+                        </p>
+
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-04-24 23:00">24-04-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #1-->
+
+            </div><!-- end page-tab 3-->
+
+            <div class="page-tab"><!-- Start page-tab 4-->
+
+                <article class="blog-post">
+
+                    <section class="post-heading">
+
+                    </section>
+
+                    <section class="post-body">
+                        <div id="logo-cup2018"><img src="https://maxi-boxi.github.io/blog/images/wc2018.gif" alt="World Cup 2018" width="90px"></div>
+
+                        <table class="football">
+                            <tr>
+                                <th class="gruppa">Группа А</th>
+                                <th>И</th>
+                                <th>В</th>
+                                <th>Н</th>
+                                <th>П</th>
+                                <th>ЗМ</th>
+                                <th>ПМ</th>
+                                <th>РМ</th>
+                                <th>О</th>
+                            </tr>
+                            <tr class="team-cup">
+                                <td class="name-team">Египет</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="team-cup">
+                                <td class="name-team">Россия</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="team-cup">
+                                <td class="name-team">Саудовская Аравия</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="team-cup">
+                                <td class="name-team">Уругвай</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </table><!-- end football table -->
+
+                        <table class="russia">
+                            <tr>
+                                <th class="game-desc"> Групповой этап · 1 Тур</th>
+                                <td class="timegame" rowspan="3"> 14.06 <br> 21:00</td>
+                            </tr>
+                            <tr>
+                                <td class="name-team">Россия</td>
+                            </tr>
+                            <tr>
+                                <td class="name-team">Саудовская Аравия</td>
+                            </tr>
+                        </table>
+                        <table class="russia">
+                            <tr>
+                                <th class="game-desc"> Групповой этап · 2 Тур</th>
+                                <td class="timegame" rowspan="3"> 20.06 <br> 0:00</td>
+                            </tr>
+                            <tr>
+                                <td class="name-team">Россия</td>
+                            </tr>
+                            <tr>
+                                <td id="egypt" class="name-team">Египет</td>
+                            </tr>
+                        </table>
+                        <table class="russia">
+                            <tr>
+                                <th class="game-desc"> Групповой этап · 3 Тур</th>
+                                <td class="timegame" rowspan="3"> 25.06 <br> 20:00</td>
+                            </tr>
+                            <tr>
+                                <td id="uruguay" class="name-team">Уругвай</td>
+                            </tr>
+                            <tr>
+                                <td id="russia" class="name-team">Россия</td>
+                            </tr>
+                        </table><!-- end tables russia -->
+
+                        <span class="clock-info">Время указано в часовом поясе: Бишкек</span>
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-05-13 13:40">13-05-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #1-->
+
+            </div><!-- end page-tab 4-->
+
+            <div class="page-tab"><!-- Start page-tab 5-->
+
+                <article class="blog-post">
+
+                    <section class="post-heading">
+                        <h2>Исторя блога</h2>
+                    </section>
+
+                    <section class="post-body">
+                        <p style="font-size: 80px; color: #aaaaaa">Этот раздел пока пуст...
+                        </p>
+
+                    </section>
+
+                    <section class="post-footer">
+                        <em>Posted by <strong>Maxi-Boxi</strong></em>
+                        <hr class="line-hr">
+                        <p class="time">
+                            <time datetime="2018-04-24 23:00">24-04-2018</time>
+                        </p>
+                    </section>
+                </article> <!-- end blog-post #1-->
+
+
+            </div><!-- end page-tab 5-->
+
+            <footer id="footer">
+                <div class="footer-copyright">
+                    <h3>Thanks for visiting!</h3>
+                    <p>&copy; 2018 Maxi-Boxi</p>
+                </div>
+                <div class="wave">
+                    <div class="wave__one"></div>
+                    <div class="wave__two"></div>
+                    <div class="wave__three"></div>
+                </div>
+            </footer>  <!--end footer -->
+
+            <div class="face-block">
+                <svg class="face" height="400" width="400">
+                    <circle class="face-head" cx="200" cy="200" r="200" fill="#FDD835"></circle>
+                    <circle class="eyes" cx="120" cy="120" r="40" fill="#FFFFFF"></circle>
+                    <circle class="eyes" cx="280" cy="120" r="40" fill="#FFFFFF"></circle>
+                    <circle class="eyes" cx="120" cy="120" r="20" fill="#000000"></circle>
+                    <circle class="eyes" cx="280" cy="120" r="20" fill="#000000"></circle>
+                    <circle class="blush" cx="80" cy="250" r="40" fill="#F45F5F"></circle>
+                    <circle class="blush" cx="320" cy="250" r="40" fill="#F45F5F"></circle>
+                    <polyline class="eyes2" style="stroke-linejoin:miter; stroke:#333; stroke-width:12; fill: none;"
+                              points="80 150, 120 90, 160 150"></polyline>
+                    <polyline class="eyes2" style="stroke-linejoin:miter; stroke:#333; stroke-width:12; fill: none;"
+                              points="240 150, 280 90, 320 150"></polyline>
+                    <path class="mouth2" d="M 120 280 q 80 80 160 0" stroke="#333" stroke-width="10" fill="none"></path>
+                    <path class="mouth" d="M 140 300 q 80 0 120 0" stroke="#333" stroke-width="10" fill="none"></path>
+                </svg>
+            </div> <!--end face-block -->
+
+             <div class="language">
+               <div id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=ru&widgetTheme=light&autoMode=true" type="text/javascript"></script>
+        </div> <!-- end language -->
+
+
+        </div> <!--end container -->
+
+        <div id="modal-container">
+
+            <div class="modal">
+
+                <h4>Начальный вид блога</h4>
+
+                <img src="https://maxi-boxi.github.io/blog/images/1.png" alt="Начальный вид блога" width="99%" tabindex="0">
+
+                <p> <a href="#v0.1">Close</a></p>
+            </div>
+
+        </div> <!--end modal-container -->
+
+        </body>
+</html>
