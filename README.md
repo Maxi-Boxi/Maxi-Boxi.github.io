@@ -1,2 +1,2 @@
-# maxiboxi.github.io
+# Maxi-Box.github.io
 my projects 
