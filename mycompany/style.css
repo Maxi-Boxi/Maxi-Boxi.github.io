@@ -127,18 +127,19 @@ main .main__about {
 }
 
 .about__right li {
-    background: url("https://maxi-boxi.github.io/mycompany/img/mark.png") 0 no-repeat;
+    background: url("img/mark.png") 0 no-repeat;
     padding-left: 25px;
     margin-top: 10px;
 }
 
 @media (max-width: 1495px) {
-    .mw-100 {
+    /*.mw-100 {
         width: 100%;
-    }
+    }*/
 
     .main__about .about__right {
         min-width: 439px;
+        margin-left: 11%;
     }
 
     .about__left {
@@ -150,9 +151,15 @@ main .main__about {
     }
 }
 
-@media (max-width: 1331px) {
 
-    .about__left {
+@media (max-width: 1135px) {
+
+
+    .mw-100 {
+        width: 100%;
+    }
+    
+     .about__left {
         display: unset;
         -webkit-box-align: unset;
         -ms-flex-align: unset;
@@ -170,14 +177,14 @@ main .main__about {
         padding: 50px 0;
     }
 
-    main .about__left {
-        min-width: 50%;
-    }
-
     .about__right {
         text-align: center;
-        margin-left: 40px;
     }
+
+    main .about__left {
+        width: 80%;
+    }
+
 
     .about__right li {
         text-align: left;
@@ -204,9 +211,8 @@ main .main__about {
     main #main__about {
         width: 90%;
     }
-}
 
-@media (max-width: 1135px) {
+
     .main__about .about__right {
         margin: 0;
     }
@@ -703,7 +709,7 @@ main .main_welcome h1 .mycompany {
     color: #898989;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1220px) {
     .testimonials br {
         display: none;
     }
