@@ -78,6 +78,17 @@ body {
 .post-body p {
     font-weight: 400;
     text-indent: 25px;
+    line-height: 1.3;
+}
+
+.color-green {
+    color: #828282;
+    font-weight: 900;
+}
+
+.color-2 {
+    color: #c8596c;
+    font-weight: 900;
 }
 
 .time {
@@ -293,8 +304,15 @@ a:active {
     .post-heading h2 {
         font-size: 18px;
     }
-    .post-body p {
+    .post-body p,
+    .post-body ul{
         font-size: 13px;
+    }
+
+    .blog-post .post-body #list-n1 li,
+    .blog-post .post-body #list-n2 li {
+        background-size: 16px;
+        padding-left: 25px;
     }
 }
 
@@ -374,42 +392,43 @@ a:active {
 
 /* ---------------------content list style----------------- */
 
-.post-body ul {
-    text-indent: 10px;
+ul#list-n1,
+ul#list-n2 {
     list-style: none;
     padding-top: 10px;
     padding-left: 25px;
     border: 1px dotted #deaa96;
 }
 
-.post-body ul li {
+ul#list-n1 li,
+ul#list-n2 li{
     margin-bottom: 10px;
-    padding-left: 15px;
+    padding-left: 35px;
     padding-right: 15px;
 }
 
-.post-body li:nth-of-type(1) {
+#list-n1 li:nth-of-type(1) {
     background: url("https://maxi-boxi.github.io/blog/images/DWS.png") no-repeat left center;
-
 }
 
-.post-body li:nth-of-type(2) {
+#list-n1 li:nth-of-type(2) {
     background: url("https://maxi-boxi.github.io/blog/images/DB.png") no-repeat left center;
 }
 
-.post-body li:nth-of-type(3) {
-    background: url("https://maxi-boxi.github.io/blog/images/sof.ico") no-repeat left center;
+#list-n1 li:nth-of-type(3) {
+    background: url("https://maxi-boxi.github.io/blog/images/sof.gif") no-repeat left center;
 }
 
-.post-body li:nth-of-type(4) {
+#list-n1 li:nth-of-type(4) {
     background: url("https://maxi-boxi.github.io/blog/images/vicon.ico") no-repeat left center;
 }
 
-.post-body li:nth-of-type(5) {
+#list-n1 li:nth-of-type(5) {
     background: url("https://maxi-boxi.github.io/blog/images/fav.ico") no-repeat left center;
 }
 
-.post-body ul a {
+ul#list-n1 a,
+ul#list-n2 a{
     display: inline-block;
     outline: none;
     color: #3d3d3d;
@@ -418,13 +437,36 @@ a:active {
     padding: 5px;
 }
 
-.post-body ul a:visited {
+ul#list-n1 a:visited,
+ul#list-n2 a:visited {
     color: #3d3d3d;
 }
 
-.post-body ul a:hover {
-    color: lightseagreen;
+ul#list-n1 a:hover,
+ul#list-n2 a:hover{
+    color: #424242;
     font-weight: bold;
+}
+
+#list-n2 li:nth-of-type(1) {
+    background: url("https://maxi-boxi.github.io/blog/images/n2-1.png") no-repeat left center;
+}
+
+#list-n2 li:nth-of-type(2) {
+    background: url("https://maxi-boxi.github.io/blog/images/n2-2.gif") no-repeat left center;
+}
+
+#list-n2 li:nth-of-type(3) {
+    background: url("https://maxi-boxi.github.io/blog/images/n2-3.png") no-repeat left center;
+}
+
+#list-n2 li:nth-of-type(4) {
+    background: url("https://maxi-boxi.github.io/blog/images/n2-4.png") no-repeat left center;
+}
+
+.post-body #list-n1 li,
+.post-body #list-n2 li {
+    background-size: 20px;
 }
 
 /* --------------------page tab style---------------------- */
