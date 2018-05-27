@@ -20,13 +20,13 @@ body {
     position: relative;
 }
 
-@media (min-width: 717px) {
+@media (min-width: 817px) {
     #container {
-        width: 700px;
+        width: 800px;
     }
 }
 
-@media (max-width: 716px) {
+@media (max-width: 816px) {
     #container {
         width: 99%;
     }
@@ -81,7 +81,7 @@ body {
     line-height: 1.3;
 }
 
-.color-green {
+.color-1 {
     color: #828282;
     font-weight: 900;
 }
@@ -195,7 +195,7 @@ code {
 .header-back {
     position: absolute;
     -moz-transform: matrix(0.6, 0, 0, 0.6, 0, 0);
-    -webkit-transform: matrix(0.6, 0, 0, 0.6, 0, 0);
+    -webkit-transform: matrix(0.65, 0, 0, 0.6, 0, 0);
     -o-transform: matrix(0.6, 0, 0, 0.6, 0, 0);
     -ms-transform: matrix(0.6, 0, 0, 0.6, 0, 0);
     left: -190px;
@@ -218,7 +218,7 @@ h1, h2, h3 {
 }
 
 .blog-post h2, .blog-post p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* ----------------------------Styling Links-------------------------- */
@@ -289,6 +289,7 @@ a:active {
 .post-body iframe {
     border: 0;
     height: 42px;
+    margin: 10px 0;
 }
 
 @media (min-width: 513px) {
@@ -309,10 +310,18 @@ a:active {
         font-size: 13px;
     }
 
+    .blog-post .post-body ul { 
+        grid-template-columns: 1fr; 
+    }
+
     .blog-post .post-body #list-n1 li,
     .blog-post .post-body #list-n2 li {
         background-size: 16px;
         padding-left: 25px;
+    }
+
+    .deleted {
+        display: none;
     }
 }
 
@@ -392,6 +401,12 @@ a:active {
 
 /* ---------------------content list style----------------- */
 
+.post-body ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 20px 0;
+}
+
 ul#list-n1,
 ul#list-n2 {
     list-style: none;
@@ -413,6 +428,7 @@ ul#list-n2 li{
 
 #list-n1 li:nth-of-type(2) {
     background: url("https://maxi-boxi.github.io/blog/images/DB.png") no-repeat left center;
+    grid-column-start: 1;
 }
 
 #list-n1 li:nth-of-type(3) {
