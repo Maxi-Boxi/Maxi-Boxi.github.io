@@ -127,7 +127,7 @@ main .main__about {
 }
 
 .about__right li {
-    background: url("https://maxi-boxi.github.io/mycompany/img/mark.png") 0 no-repeat;
+    background: url("img/mark.png") 0 no-repeat;
     padding-left: 25px;
     margin-top: 10px;
 }
