@@ -65,26 +65,32 @@ main {
 }
 
 .post-body {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
 }
 
 @media (max-width: 790px) {
     .post-body {
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
     }
 }
 
 .post-body2 {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 @media (max-width: 850px) {
     .post-body2 {
-        grid-template-columns: 1fr 1fr;
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
     }
 
     .table-container:nth-of-type(2) .timegame,
@@ -121,7 +127,8 @@ main {
 
 @media (max-width: 660px) {
     .post-body2 {
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
     }
 
     .table-container .timegame {
@@ -180,7 +187,7 @@ th.gruppa {
     }
 } */
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .football .gruppa:after {
         position: absolute;
         top: 8px;
@@ -663,51 +670,51 @@ th.game-desc {
 
 
 .Kazan-ST {
-    background: url("img/Kazan-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Kazan-ST.png") no-repeat center center;
 }
 
 .Luzhniki-ST {
-    background: url("img/Luzhniki-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Luzhniki-ST.png") no-repeat center center;
 }
 
 .Zenit-ST {
-    background: url("img/Zenit-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Zenit-ST.png") no-repeat center center;
 }
 
 .Fisht-ST {
-    background: url("img/Fisht-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Fisht-ST.png") no-repeat center center;
 }
 
 .Volgograd-ST {
-    background: url("img/Volgograd-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Volgograd-ST.png") no-repeat center center;
 }
 
 .NN-ST {
-    background: url("img/NN-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/NN-ST.png") no-repeat center center;
 }
 
 .Rostov-ST {
-    background: url("img/Rostov-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Rostov-ST.png") no-repeat center center;
 }
 
 .Samara-ST {
-    background: url("img/Samara-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Samara-ST.png") no-repeat center center;
 }
 
 .Mordovia-ST {
-    background: url("img/Mordovia-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Mordovia-ST.png") no-repeat center center;
 }
 
 .Otkritie-ST {
-    background: url("img/Otkritie-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Otkritie-ST.png") no-repeat center center;
 }
 
 .Kaliningrad-ST {
-    background: url("img/Kaliningrad-ST.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Kaliningrad-ST.png") no-repeat center center;
 }
 
 .Tsentralnyi-ST {
-    background: url("img/Tsentralnyi-St.png") no-repeat center center;
+    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Tsentralnyi-St.png") no-repeat center center;
 }
 
 /*-------------------------Stadium Names-------------------------*/
@@ -721,8 +728,6 @@ th.game-desc {
     font-style: italic;
     font-size: 13px;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizelegibility;
     text-transform: uppercase;
     padding: 0 10px;
     color: #f1f5ff;
@@ -744,8 +749,6 @@ th.game-desc {
     font-style: italic;
     font-size: 13px;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizelegibility;
     text-transform: uppercase;
     color: #5e7c92;
     letter-spacing: 1px;
