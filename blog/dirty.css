@@ -39,7 +39,7 @@ body {
 }
 
 #footer {
-    background: #333;
+    background: #D4D4D4;
     color: #fff;
     padding: 0;
     margin: 10px 10px 10px 10px;
@@ -48,6 +48,7 @@ body {
     position: relative;
     z-index: 2;
     height: 87px;
+    overflow: hidden;
 }
 
 .footer-copyright {
@@ -99,7 +100,6 @@ body {
 }
 
 time:hover {
-    font-size: 13px;
     color: #333;
 }
 
@@ -194,10 +194,10 @@ code {
 
 .header-back {
     position: absolute;
-    -moz-transform: matrix(0.6, 0, 0, 0.6, 0, 0);
-    -webkit-transform: matrix(0.65, 0, 0, 0.6, 0, 0);
-    -o-transform: matrix(0.6, 0, 0, 0.6, 0, 0);
-    -ms-transform: matrix(0.6, 0, 0, 0.6, 0, 0);
+    -moz-transform: matrix(0.63, 0, 0, 0.6, 13, 0);
+    -webkit-transform: matrix(0.63, 0, 0, 0.6, 13, 0);
+    -o-transform: matrix(0.63, 0, 0, 0.6, 13, 0);
+    -ms-transform: matrix(0.63, 0, 0, 0.6, 13, 0);
     left: -190px;
     top: -130px;
 }
@@ -593,23 +593,28 @@ label:nth-of-type(5) {
 /*--------------------------wave style-------------------*/
 .wave {
     width: 100%;
-    height: 82px;
+    height: 100%;
     overflow: hidden;
     position: absolute;
-    top: 5px;
-    background: #333;
+    top: 0;
+    background: #333; /* Для старых браузров */
+    background: linear-gradient(to bottom, #333333 90%, #c7c7c7 100%);
+}
 
+.wave__one,
+.wave__two,
+.wave__three {
+    background: url("https://maxi-boxi.github.io/blog/images/wave-top.svg") repeat-x;
+    background-size: contain;
+    position: absolute;
+    width: 7000px;
+    height: 65px;
+    margin-top: 22px;
+    top: 0;
 }
 
 .wave__one {
-    background: url("https://maxi-boxi.github.io/blog/images/wave-top.svg") repeat-x;
-    background-size: contain;
-    width: 7000px;
-    height: 65.4px;
     animation: waves 20s infinite linear;
-    margin-top: 17px;
-    position: relative;
-    top: 0;
     z-index: 11;
     opacity: 0.5;
     -webkit-filter: drop-shadow(4px 1px 8px red);
@@ -617,30 +622,16 @@ label:nth-of-type(5) {
 }
 
 .wave__two {
-    background: url("https://maxi-boxi.github.io/blog/images/wave-top.svg") repeat-x;
-    background-size: contain;
-    width: 7000px;
-    height: 65.4px;
     animation: waves 15s infinite linear;
     opacity: 0.4;
-    position: absolute;
-    margin-top: 17px;
-    top: 0;
     z-index: 12;
     -webkit-filter: drop-shadow(4px 1px 8px #19eb00);
     filter: drop-shadow(4px 1px 8px #19eb00);
 }
 
 .wave__three {
-    background: url("https://maxi-boxi.github.io/blog/images/wave-top.svg") repeat-x;
-    background-size: contain;
-    width: 7000px;
-    height: 65.4px;
     animation: waves 10s infinite linear;
     opacity: 0.3;
-    position: absolute;
-    margin-top: 17px;
-    top: 0;
     z-index: 13;
     -webkit-filter: drop-shadow(4px 1px 8px #5146ff);
     filter: drop-shadow(4px 1px 8px #5146ff);
@@ -651,7 +642,7 @@ label:nth-of-type(5) {
         margin-left: 0;
     }
     100% {
-        margin-left: -581.4px;
+        margin-left: -578px;
     }
 }
 
