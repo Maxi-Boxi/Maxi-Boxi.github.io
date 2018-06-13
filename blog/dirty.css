@@ -1,4 +1,4 @@
-/* Dirty */
+/* Maxi-Boxi*/
 
 * {
     margin: 0;
@@ -18,24 +18,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-}
-
-@media (min-width: 817px) {
-    #container {
-        width: 800px;
-    }
-}
-
-@media (max-width: 816px) {
-    #container {
-        width: 99%;
-    }
-}
-
-@media (max-width: 320px) {
-    #container {
-        width: 302px;
-    }
+    width: 100%;
+    max-width: 800px;
+    min-width: 316px;
 }
 
 #footer {
@@ -267,6 +252,8 @@ a:active {
 
 @keyframes pulse {
     0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
         transform: scale(0.9);
         opacity: 0;
     }
@@ -274,6 +261,8 @@ a:active {
         opacity: 1;
     }
     100% {
+        -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
         transform: scale(1.7);
         opacity: 0;
     }
@@ -285,45 +274,8 @@ a:active {
     border: 0;
     height: 42px;
     margin: 10px 0;
-}
-
-@media (min-width: 513px) {
-    .post-body iframe {
-        width: 400px;
-    }
-}
-
-@media (max-width: 512px) {
-    .post-body iframe {
-        width: 100%;
-    }
-    .post-heading h2 {
-        font-size: 18px;
-    }
-    .post-body p,
-    .post-body ul{
-        font-size: 13px;
-    }
-
-    .blog-post .post-body ul { 
-        grid-template-columns: 1fr;
-    }
-
-    .blog-post .post-body #list-n1 li,
-    .blog-post .post-body #list-n2 li {
-        background-size: 16px;
-        padding-left: 25px;
-    }
-
-    .deleted {
-        display: none;
-    }
-}
-
-@media (max-width: 320px) {
-    .post-body iframe {
-        width: 214px;
-    }
+    max-width: 400px;
+    width: 100%;
 }
 
 /* -------------------------modal container---------------------- */
@@ -336,9 +288,18 @@ a:active {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .modal {
@@ -348,20 +309,26 @@ a:active {
 #modal-container:not(:target) {
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 #modal-container:target {
     opacity: 1;
     visibility: visible;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 /* ---------------------content list style----------------- */
 
 .post-body ul {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; 
     margin: 20px 0;
 }
 
@@ -386,6 +353,7 @@ ul#list-n2 li{
 
 #list-n1 li:nth-of-type(2) {
     background: url("https://maxi-boxi.github.io/blog/images/DB.png") no-repeat left center;
+    -ms-grid-column: 1;
     grid-column-start: 1;
 }
 
@@ -482,8 +450,14 @@ label {
     font-size: 14px;
     font-weight: bold;
     font-style: italic;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
     padding: 3px 6px;
     top: 127px;
     cursor: pointer;
@@ -607,7 +581,6 @@ label:nth-of-type(5) {
 /*-----------------------------Football Table-------------------------*/
 
 .football {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
     font-size: 14px;
     background-color: #fff;
     width: 100%;
@@ -615,6 +588,7 @@ label:nth-of-type(5) {
     text-align: center;
     margin: 15px 0 28px 0;
     table-layout: fixed;
+    min-width: 234px;
 }
 
 .football th {
@@ -637,11 +611,6 @@ th.gruppa {
     width: 60%;
 }
 
-@media (max-width: 336px) {
-    .football .gruppa {
-        width: 30px;
-    }
-}
 
 @media (max-width: 369px) {
     .football .gruppa:after {
@@ -734,7 +703,6 @@ th.gruppa {
     position: relative;
     z-index: 55;
     color: black;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
     font-size: 14px;
     background-color: #fff;
     width: 100%;
@@ -742,6 +710,7 @@ th.gruppa {
     text-align: center;
     table-layout: fixed;
     border-top: 1px solid #E0E0E0;
+    min-width: 234px;
 }
 
 th.game-desc {
@@ -784,13 +753,30 @@ th.game-desc {
     background-color: #FAFAFA;
 }
 
+/*-------------------------Adaptive----------------------*/
 
-/*-----------------------language vidget-----------------*/
+@media (max-width: 527px) {
 
-.language {
-      position: absolute;
-      display: none;
-    top: 170px;
-    right: 0;
-    z-index: 55;
+    .post-heading h2 {
+        font-size: 18px;
+    }
+    .post-body p,
+    .post-body ul{
+        font-size: 13px;
+    }
+
+    .blog-post .post-body ul { 
+        -ms-grid-columns: 1fr; 
+            grid-template-columns: 1fr;
+    }
+
+    .blog-post .post-body #list-n1 li,
+    .blog-post .post-body #list-n2 li {
+        background-size: 16px;
+        padding-left: 25px;
+    }
+
+    .deleted {
+        display: none;
+    }
 }
