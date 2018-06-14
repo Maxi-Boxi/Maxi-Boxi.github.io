@@ -146,7 +146,6 @@ main {
 /*-----------------------------Football Tables-------------------------*/
 
 .group {
-    /* max-width: 420px; */
     min-width: 230px;
 }
 
@@ -180,12 +179,6 @@ th.gruppa {
     text-overflow: ellipsis;
     width: 60%;
 }
-
-/* @media (max-width: 347px) {
-    .football .gruppa {
-        width: 30px;
-    }
-} */
 
 @media (max-width: 360px) {
     .football .gruppa:after {
@@ -313,9 +306,10 @@ h2.matches {
     margin-bottom: 20px;
 }
 
-h3 {
+summary {
     position: relative;
     text-align: left;
+    outline: none;
     color: #6c6c6c;
     font-size: 13px;
     padding-top: 12px;
@@ -323,36 +317,33 @@ h3 {
     background-color: #F5F5F5;
     text-indent: 10px;
     border-top: 1px solid #E0E0E0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
     cursor: pointer;
 }
 
-h3:before {
+/*summary:before {
     position: absolute;
     font-size: 19px;
     content: '\2191';
     top: 7px;
     right: 25px;
     opacity: 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
-h3:hover::before {
+summary:hover::before {
     opacity: 1;
-}
+}*/
 
-
-/*
-h3:hover {
-    background-color: #fdfbff;
+summary:hover {
+    background-color: #F9F9F9;
 }
-*/
 
 /* ----------------------------Group B background------------------------- */
 
@@ -719,24 +710,27 @@ th.game-desc {
 
 /*-------------------------Stadium Names-------------------------*/
 
+.St-Name-Line,
 .Stadium-Name {
     position: absolute;
-    z-index: 100;
-   /* bottom: -16px;*/
-    bottom: -16px;
-    left: 55%;
     font-style: italic;
     font-size: 13px;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    padding: 0 10px;
-    color: #f1f5ff;
     letter-spacing: 1px;
-    text-shadow: 0 0 0 #64637c, 0 0 1px #000000, 0 0 1px #73767a , 0 1px 1px #64637c, 0 0 2px #000000, 0 0 1px #73767a;
+    padding: 0 10px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+.Stadium-Name {
+    z-index: 100;
+    bottom: -17px;
+    left: 55%;
+    color: #f1f5ff;
+    text-shadow: 0 0 0 #64637c, 0 0 1px #000000, 0 0 1px #73767a , 0 1px 1px #64637c, 0 0 2px #000000, 0 0 1px #73767a;
     opacity: 0.9;
 }
 
@@ -745,14 +739,7 @@ th.game-desc {
 }
 
 .St-Name-Line {
-    position: absolute;
-    font-style: italic;
-    font-size: 13px;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
     color: #5e7c92;
-    letter-spacing: 1px;
-    padding: 0 10px;
     z-index: 99;
     bottom: 5px;
     left: 100%;
@@ -762,10 +749,6 @@ th.game-desc {
     border-radius: 20px ;
     background: #5e7c92;
     opacity: 0.5;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
 }
 
 .table-container:hover .St-Name-Line {
