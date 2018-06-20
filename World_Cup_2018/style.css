@@ -68,14 +68,14 @@ main {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
 }
 
 @media (max-width: 790px) {
     .post-body {
         -ms-grid-columns: 1fr;
-            grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -83,14 +83,14 @@ main {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 @media (max-width: 850px) {
     .post-body2 {
         -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .table-container:nth-of-type(2) .timegame,
@@ -98,10 +98,12 @@ main {
     .table-container:nth-of-type(6) .timegame {
         border-right: 0;
     }
+
     .header-back,
     .teremok {
         display: none;
     }
+
     .logo-2018 {
         position: relative;
         margin-top: 8px;
@@ -111,11 +113,11 @@ main {
     }
 
     #logo-2 {
-    display: none;
+        display: none;
     }
 
     #logo-1 {
-    display: inline;
+        display: inline;
     }
 
     .header {
@@ -128,7 +130,7 @@ main {
 @media (max-width: 660px) {
     .post-body2 {
         -ms-grid-columns: 1fr;
-            grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .table-container .timegame {
@@ -261,33 +263,32 @@ th.gruppa {
 
 .football tr:nth-of-type(2) .name-team,
 .egypt {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/lYah1Uqw37XdicC6C4HNqg_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/lYah1Uqw37XdicC6C4HNqg_48x48.png");
 }
 
 .football tr:nth-of-type(3) .name-team,
 .russia {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/5Y6kOqiOIv2C1sP9C_BWtA_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/5Y6kOqiOIv2C1sP9C_BWtA_48x48.png");
 }
 
 .football tr:nth-of-type(4) .name-team,
 .saudi-arabia {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/QoAJxO46fHid3_T-7nRZ0Q_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/QoAJxO46fHid3_T-7nRZ0Q_48x48.png");
 }
 
 .football tr:nth-of-type(5) .name-team,
 .uruguay {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/KnSUdQWiGRoy89q4x85IgA_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/KnSUdQWiGRoy89q4x85IgA_48x48.png");
 }
 
-.post-body tr:nth-of-type(1n+1) .name-team,
-.russia,
-.egypt,
-.uruguay,
-.saudi-arabia {
+td.name-team {
     background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .center {
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -304,10 +305,12 @@ h2.matches {
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 summary {
     position: relative;
+    z-index: 3;
     text-align: left;
     outline: none;
     color: #6c6c6c;
@@ -324,10 +327,11 @@ summary {
     cursor: pointer;
 }
 
-/*summary:before {
+.upper {
     position: absolute;
+    z-index: 1;
+    color: #b5b5b5;
     font-size: 19px;
-    content: '\2191';
     top: 7px;
     right: 25px;
     opacity: 0;
@@ -337,9 +341,13 @@ summary {
     transition: opacity 0.3s ease;
 }
 
-summary:hover::before {
+.upper:hover {
+    color: #333333;
+}
+
+summary:hover .upper {
     opacity: 1;
-}*/
+}
 
 summary:hover {
     background-color: #F9F9F9;
@@ -349,211 +357,154 @@ summary:hover {
 
 #group-b tr:nth-of-type(2) .name-team,
 .Iran {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/1oq8Fy7ETpBpZNaCA22ArQ_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/1oq8Fy7ETpBpZNaCA22ArQ_48x48.png");
 }
 
 #group-b tr:nth-of-type(3) .name-team,
 .Morocco {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/I3gt2Ew39ux3GGdZ-4JE3g_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/I3gt2Ew39ux3GGdZ-4JE3g_48x48.png");
 }
 
 #group-b tr:nth-of-type(4) .name-team,
 .Portugal {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/HJ3_2c4w791nZJj7n-Lj3Q_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/HJ3_2c4w791nZJj7n-Lj3Q_48x48.png");
 }
 
 #group-b tr:nth-of-type(5) .name-team,
 .Spain {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/5hLkf7KFHhmpaiOJQv8LmA_48x48.png") no-repeat left center;
-}
-
-.post-body #group-b tr:nth-of-type(1n+1) .name-team,
-.Iran,
-.Morocco,
-.Portugal,
-.Spain {
-    background-size: 24px;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/5hLkf7KFHhmpaiOJQv8LmA_48x48.png");
 }
 
 /* ----------------------------Group C background------------------------- */
 
 #group-c tr:nth-of-type(2) .name-team,
 .Australia {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/jSgw5z0EPOLzdUi-Aomq7Q_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/jSgw5z0EPOLzdUi-Aomq7Q_48x48.png");
 }
 
 #group-c tr:nth-of-type(3) .name-team,
 .Denmark {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/LaOvu-pyRqRso6uzff55XA_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/LaOvu-pyRqRso6uzff55XA_48x48.png");
 }
 
 #group-c tr:nth-of-type(4) .name-team,
 .France {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/z3JEQB3coEAGLCJBEUzQ2A_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/z3JEQB3coEAGLCJBEUzQ2A_48x48.png");
 }
 
 #group-c tr:nth-of-type(5) .name-team,
 .Peru {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/U08wYdQptUaWuweG82L3dw_48x48.png") no-repeat left center;
-}
-
-.post-body #group-c tr:nth-of-type(1n+1) .name-team,
-.Australia,
-.Denmark,
-.France,
-.Peru {
-    background-size: 24px;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/U08wYdQptUaWuweG82L3dw_48x48.png");
 }
 
 /* ----------------------------Group D background------------------------- */
 
 #group-d tr:nth-of-type(2) .name-team,
 .Argentina {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/1xBWyjjkA6vEWopPK3lIPA_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/1xBWyjjkA6vEWopPK3lIPA_48x48.png");
 }
 
 #group-d tr:nth-of-type(3) .name-team,
 .Croatia {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/9toerdOg8xW4CRhDaZxsyw_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/9toerdOg8xW4CRhDaZxsyw_48x48.png");
 }
 
 #group-d tr:nth-of-type(4) .name-team,
 .Iceland {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/QSlAlD9v6Fm_drC_2z1u8A_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/QSlAlD9v6Fm_drC_2z1u8A_48x48.png");
 }
 
 #group-d tr:nth-of-type(5) .name-team,
 .Nigeria {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/2vpR8clrEZdpNjaiHKpg7A_48x48.png") no-repeat left center;
-}
-
-.post-body #group-d tr:nth-of-type(1n+1) .name-team,
-.Argentina,
-.Croatia,
-.Iceland,
-.Nigeria,
-.Argentina {
-    background-size: 24px;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/2vpR8clrEZdpNjaiHKpg7A_48x48.png");
 }
 
 /* ----------------------------Group E background------------------------- */
 
 #group-e tr:nth-of-type(2) .name-team,
 .Brazil {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/zKLzoJVYz0bb6oAnPUdwWQ_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/zKLzoJVYz0bb6oAnPUdwWQ_48x48.png");
 }
 
 #group-e tr:nth-of-type(3) .name-team,
 .Costa-Rica {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/ixZiM5pj2IvvYc15k-zfeQ_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/ixZiM5pj2IvvYc15k-zfeQ_48x48.png");
 }
 
 #group-e tr:nth-of-type(4) .name-team,
 .Serbia {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/xyh1vmZ-xJH2iJCKjqS1Ow_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/xyh1vmZ-xJH2iJCKjqS1Ow_48x48.png");
 }
 
 #group-e tr:nth-of-type(5) .name-team,
 .Switzerland {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/1hy9ek4dOIffYULM6k1fqg_48x48.png") no-repeat left center;
-}
-
-.post-body #group-e tr:nth-of-type(1n+1) .name-team,
-.Brazil,
-.Costa-Rica,
-.Serbia,
-.Switzerland {
-    background-size: 24px;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/1hy9ek4dOIffYULM6k1fqg_48x48.png");
 }
 
 /* ----------------------------Group F background------------------------- */
 
 #group-f tr:nth-of-type(2) .name-team,
 .Germany {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/h1FhPLmDg9AHXzhygqvVPg_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/h1FhPLmDg9AHXzhygqvVPg_48x48.png");
 }
 
 #group-f tr:nth-of-type(3) .name-team,
 .South-Korea {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/Uu5pwNmMHGd5bCooKrS3Lw_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/Uu5pwNmMHGd5bCooKrS3Lw_48x48.png");
 }
 
 #group-f tr:nth-of-type(4) .name-team,
 .Mexico {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/yJF9xqmUGenD8108FJbg9A_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/yJF9xqmUGenD8108FJbg9A_48x48.png");
 }
 
 #group-f tr:nth-of-type(5) .name-team,
 .Sweden {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/OkFlRvRsKMWb8Hk20L9Trw_48x48.png") no-repeat left center;
-}
-
-.post-body #group-f tr:nth-of-type(1n+1) .name-team,
-.Germany,
-.South-Korea,
-.Mexico,
-.Sweden {
-    background-size: 24px;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/OkFlRvRsKMWb8Hk20L9Trw_48x48.png");
 }
 
 /* ----------------------------Group G background------------------------- */
 
 #group-g tr:nth-of-type(2) .name-team,
 .Belgium {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/6SF7yEoB60bU5knw-M7R5Q_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/6SF7yEoB60bU5knw-M7R5Q_48x48.png");
 }
 
 #group-g tr:nth-of-type(3) .name-team,
 .England {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png");
 }
 
 #group-g tr:nth-of-type(4) .name-team,
 .Panama {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/JIn8OwxL6KFFiYrKGnL2RQ_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/JIn8OwxL6KFFiYrKGnL2RQ_48x48.png");
 }
 
 #group-g tr:nth-of-type(5) .name-team,
 .Tunisia {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/Xs33c9XVUJBX0IkeFn_bIw_48x48.png") no-repeat left center;
-}
-
-.post-body #group-g tr:nth-of-type(1n+1) .name-team,
-.Belgium,
-.England,
-.Panama,
-.Tunisia {
-    background-size: 24px;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/Xs33c9XVUJBX0IkeFn_bIw_48x48.png");
 }
 
 /* ----------------------------Group H background------------------------- */
 
 #group-h tr:nth-of-type(2) .name-team,
 .Colombia {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/tXHnA_tDylayacdjWQCJvw_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/tXHnA_tDylayacdjWQCJvw_48x48.png");
 }
 
 #group-h tr:nth-of-type(3) .name-team,
 .Japan {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/by4OltvtZz7taxuQtkiP3A_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/by4OltvtZz7taxuQtkiP3A_48x48.png");
 }
 
 #group-h tr:nth-of-type(4) .name-team,
 .Poland {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/yTS_Piy3M1wUBnqU0n5aAw_48x48.png") no-repeat left center;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/yTS_Piy3M1wUBnqU0n5aAw_48x48.png");
 }
 
 #group-h tr:nth-of-type(5) .name-team,
 .Senegal {
-    background: url("https://ssl.gstatic.com/onebox/media/sports/logos/zw3ac5sIbH4DS6zP5auOkQ_48x48.png") no-repeat left center;
-}
-
-.post-body #group-h tr:nth-of-type(1n+1) .name-team,
-.Colombia,
-.Japan,
-.Poland,
-.Senegal {
-    background-size: 24px;
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/zw3ac5sIbH4DS6zP5auOkQ_48x48.png");
 }
 
 /*-------------------------WC 2018 time and date tables--------------------*/
@@ -588,6 +539,7 @@ th.game-desc {
 }
 
 .date-time .name-team {
+    position: relative;
     color: #212121;
     display: block;
     text-align: left;
@@ -657,55 +609,55 @@ th.game-desc {
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
+    background: no-repeat center;
 }
 
-
 .Kazan-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Kazan-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Kazan-ST.png");
 }
 
 .Luzhniki-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Luzhniki-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Luzhniki-ST.png");
 }
 
 .Zenit-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Zenit-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Zenit-ST.png");
 }
 
 .Fisht-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Fisht-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Fisht-ST.png");
 }
 
 .Volgograd-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Volgograd-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Volgograd-ST.png");
 }
 
 .NN-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/NN-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/NN-ST.png");
 }
 
 .Rostov-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Rostov-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Rostov-ST.png");
 }
 
 .Samara-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Samara-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Samara-ST.png");
 }
 
 .Mordovia-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Mordovia-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Mordovia-ST.png");
 }
 
 .Otkritie-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Otkritie-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Otkritie-ST.png");
 }
 
 .Kaliningrad-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Kaliningrad-ST.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Kaliningrad-ST.png");
 }
 
 .Tsentralnyi-ST {
-    background: url("https://maxi-boxi.github.io/World_Cup_2018/img/Tsentralnyi-St.png") no-repeat center center;
+    background-image: url("https://maxi-boxi.github.io/World_Cup_2018/img/Tsentralnyi-St.png");
 }
 
 /*-------------------------Stadium Names-------------------------*/
@@ -730,7 +682,7 @@ th.game-desc {
     bottom: -17px;
     left: 55%;
     color: #f1f5ff;
-    text-shadow: 0 0 0 #64637c, 0 0 1px #000000, 0 0 1px #73767a , 0 1px 1px #64637c, 0 0 2px #000000, 0 0 1px #73767a;
+    text-shadow: 0 0 0 #64637c, 0 0 1px #000000, 0 0 1px #73767a, 0 1px 1px #64637c, 0 0 2px #000000, 0 0 1px #73767a;
     opacity: 0.9;
 }
 
@@ -744,9 +696,9 @@ th.game-desc {
     bottom: 5px;
     left: 100%;
     height: 17px;
-    -webkit-border-radius:  20px;
-    -moz-border-radius: 20px ;
-    border-radius: 20px ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
     background: #5e7c92;
     opacity: 0.5;
 }
@@ -764,4 +716,38 @@ th.game-desc {
     .table-container:hover .St-Name-Line {
         left: 53%;
     }
+}
+
+/*--------------plus and minus----------------*/
+
+#plus,
+#minus {
+    color: #979797;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#plus {
+    margin-right: 5px;
+}
+
+#minus {
+    margin-left: 5px;
+}
+
+#plus:hover,
+#minus:hover {
+    color: #5b5b5b;
+}
+
+/*----------Score----------*/
+
+.score {
+    position: absolute;
+    right: 11%;
+}
+
+.post-body2 .loose {
+    color: #838383;
 }
