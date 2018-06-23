@@ -35,7 +35,7 @@ autoOpen.addListener(handleMatchMedia);
 /*--open details by click--*/
 
 var tableNa = [].slice.call(document.querySelectorAll('div.group'));
-  
+
 tableNa.forEach(function (element, z) {
 
     element.addEventListener('click', function () {

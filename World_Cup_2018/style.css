@@ -15,7 +15,6 @@ body {
 }
 
 main {
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -154,7 +153,7 @@ main {
 .football {
     background-color: #fff;
     width: 100%;
-
+    position: relative;
     border-collapse: collapse;
     text-align: center;
     margin: 12px 0;
@@ -751,3 +750,33 @@ th.game-desc {
 .post-body2 .loose {
     color: #838383;
 }
+
+/*----------Place number----------*/
+
+.place_number {
+    position: absolute;
+    left: -16px;
+    bottom: 8px;
+    opacity: 0;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+tr.team-cup:nth-of-type(4) .place_number {
+    bottom: 44px;
+}
+tr.team-cup:nth-of-type(3) .place_number {
+    bottom: 80px;
+}
+
+tr.team-cup:nth-of-type(2) .place_number {
+    top: 42px;
+}
+
+tr.team-cup:hover .place_number {
+    opacity: 1;
+}
+
+
