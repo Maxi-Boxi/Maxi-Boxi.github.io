@@ -12,10 +12,10 @@ var tableNum = document.querySelectorAll('details table'),
     nameTeam2 = document.querySelectorAll('details table tr:nth-of-type(3) td');
 for (var x = 0; x < tableNum.length; x++) {
     var getNaTeClass = nameTeam[x].getAttribute('class'),
-        getNaTeClass2 = nameTeam2[x].getAttribute('class');
-    tableNum[x].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + getNaTeClass.split(' ')[1] +"+national+team+vs+" + getNaTeClass2.split(' ')[1]+"+national+team+" + "+FIFA+2018')");
+        getNaTeClass2 = nameTeam2[x].getAttribute('class'),
+        nT = '+national+team+';
+    tableNum[x].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + getNaTeClass.split(' ')[1] +nT +"+vs+" + getNaTeClass2.split(' ')[1]+nT + "+FIFA+2018')");
 }
-
 
 /*---details open and close by width----*/
 
