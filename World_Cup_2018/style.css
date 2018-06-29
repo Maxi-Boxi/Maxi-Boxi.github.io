@@ -872,35 +872,22 @@ tr.team-cup:hover .place_number {
     transition: all 0.2s ease;
 }
 
-.play_off:after{
+.play_off_number{
     position: absolute;
+    text-align: center;
     top: -30px;
-    left: 0;
-    right: 0;
+    width: 100%;
     color: #d7d7d7;
     font-weight: 500;
     font-size: 17px;
     z-index: 3;
-    content: '';
 }
 
-#playoff4_container .play_off_container:nth-child(1) .play_off:after{
-    content: '1/4';
-}
 
-#playoff8_container .play_off_container:nth-child(1) .play_off:after{
-    content: '1/8';
-}
-
-#playoff2_container .play_off_container:nth-child(1) .play_off:after{
-    content: '1/2';
-}
-
-#playoff1_container .play_off_container:nth-child(1) .play_off:after{
-    content: 'Final';
+#playoff1_container .play_off_container:nth-child(1) .play_off_number{
     top: 38px;
     left: -60px;
-    right: unset;
+    text-align: unset;
 }
 
 .play_off:hover {
@@ -1029,7 +1016,7 @@ tr.team-cup:hover .place_number {
     #playoff1_container .name-team {
         min-width: 60%;
     }
-    .play_off:after{
+    .play_off_number{
         font-size: 15px;
     }
 }
@@ -1079,6 +1066,11 @@ tr.team-cup:hover .place_number {
     #playoff1_container .play_off td.play_off_score {
         padding-left: 2px;
     }
+
+     #playoff4_container .play_off_number,
+     #playoff2_container .play_off_number {
+         left: -7px;
+    }
 }
 
 @media (max-width: 366px) {
@@ -1101,6 +1093,10 @@ tr.team-cup:hover .place_number {
 
     #playoff8_container .play_off td.play_off_score {
         padding-left: 2px;
+    }
+
+    #playoff8_container .play_off_number {
+         left: -7px;
     }
 }
 
