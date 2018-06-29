@@ -17,6 +17,17 @@ for (var x = 0; x < tableNum.length; x++) {
     tableNum[x].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + getNaTeClass.split(' ')[1] +nT +"+vs+" + getNaTeClass2.split(' ')[1]+nT + "+FIFA+2018')");
 }
 
+/*---links to google play-off----*/
+
+var getPlofCon = document.querySelectorAll('.play_off'),
+    getPlofTd1 = document.querySelectorAll('.play_off tr:nth-of-type(2) td:nth-of-type(1)'),
+    getPlofTd2 = document.querySelectorAll('.play_off tr:nth-of-type(3) td:nth-of-type(1)');
+for (var p = 0; p < getPlofCon.length; p++) {
+    var PlofTd1Class = getPlofTd1[p].getAttribute('class'),
+        PlofTd2Class = getPlofTd2[p].getAttribute('class');
+    getPlofCon[p].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + PlofTd1Class.split(' ')[1] +nT +"+vs+" + PlofTd2Class.split(' ')[1]+nT + "+FIFA+2018')");
+}
+
 /*---details open and close by width----*/
 
 var handleMatchMedia = function (mediaQuery) {
@@ -70,9 +81,26 @@ var minusGet = document.getElementById('minus'),
     }
 };
 
+/*----------Tabs----------*/
 
 
+var tab1Get = document.getElementById('tab_1'),
+    tab2Get = document.getElementById('tab_2'),
+    playOff = document.getElementById('playoff_container'),
+    matContGet = document.getElementById('matches_container');
+    tab2Get.onclick = function tab2Function() {
+        matContGet.classList.add("hidden");
+        playOff.classList.remove("hidden");
+          tab2Get.classList.add("underline");
+          tab1Get.classList.remove("underline");
+};
 
+    tab1Get.onclick = function tab1Function() {
+        playOff.classList.add("hidden");
+        matContGet.classList.remove("hidden");
+        tab1Get.classList.add("underline");
+        tab2Get.classList.remove("underline");
+};
 
 
 

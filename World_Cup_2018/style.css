@@ -28,6 +28,7 @@ main {
     border-top: solid 3px #ccc;
     border-bottom: solid 3px #ccc;
     background-color: #0f4583;
+    margin-bottom: 30px;
 }
 
 .header-back {
@@ -82,7 +83,7 @@ main {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 
 }
 
@@ -123,6 +124,7 @@ main {
         border: none;
         background-color: unset;
         min-height: 120px;
+        margin-bottom: 0;
     }
 }
 
@@ -260,26 +262,6 @@ th.gruppa {
     cursor: pointer;
 }
 
-.football tr:nth-of-type(2) .name-team,
-.egypt {
-    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/lYah1Uqw37XdicC6C4HNqg_48x48.png");
-}
-
-.football tr:nth-of-type(3) .name-team,
-.russia {
-    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/5Y6kOqiOIv2C1sP9C_BWtA_48x48.png");
-}
-
-.football tr:nth-of-type(4) .name-team,
-.saudi-arabia {
-    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/QoAJxO46fHid3_T-7nRZ0Q_48x48.png");
-}
-
-.football tr:nth-of-type(5) .name-team,
-.uruguay {
-    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/KnSUdQWiGRoy89q4x85IgA_48x48.png");
-}
-
 td.name-team {
     background-size: 24px;
     background-repeat: no-repeat;
@@ -294,8 +276,8 @@ td.name-team {
 
 h1 {
     margin-top: 25px;
-    margin-bottom: 10px;
-    color: #5b5b5b;
+    margin-bottom: 20px;
+    color: #979797;
     font-size: 15px;
 }
 
@@ -303,7 +285,7 @@ h2.matches {
     color: #5b5b5b;
     font-size: 15px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: inline-block;
 }
 
@@ -352,156 +334,146 @@ summary:hover {
     background-color: #F9F9F9;
 }
 
+/* ----------------------------Group A background------------------------- */
+
+.egypt {
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/lYah1Uqw37XdicC6C4HNqg_48x48.png");
+}
+
+.Russia {
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/5Y6kOqiOIv2C1sP9C_BWtA_48x48.png");
+}
+
+.saudi-arabia {
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/QoAJxO46fHid3_T-7nRZ0Q_48x48.png");
+}
+
+.Uruguay {
+    background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/KnSUdQWiGRoy89q4x85IgA_48x48.png");
+}
+
 /* ----------------------------Group B background------------------------- */
 
-#group-b tr:nth-of-type(2) .name-team,
 .Iran {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/1oq8Fy7ETpBpZNaCA22ArQ_48x48.png");
 }
 
-#group-b tr:nth-of-type(3) .name-team,
 .Morocco {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/I3gt2Ew39ux3GGdZ-4JE3g_48x48.png");
 }
 
-#group-b tr:nth-of-type(4) .name-team,
 .Portugal {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/HJ3_2c4w791nZJj7n-Lj3Q_48x48.png");
 }
 
-#group-b tr:nth-of-type(5) .name-team,
 .Spain {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/5hLkf7KFHhmpaiOJQv8LmA_48x48.png");
 }
 
 /* ----------------------------Group C background------------------------- */
 
-#group-c tr:nth-of-type(2) .name-team,
 .Australia {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/jSgw5z0EPOLzdUi-Aomq7Q_48x48.png");
 }
 
-#group-c tr:nth-of-type(3) .name-team,
 .Denmark {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/LaOvu-pyRqRso6uzff55XA_48x48.png");
 }
 
-#group-c tr:nth-of-type(4) .name-team,
 .France {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/z3JEQB3coEAGLCJBEUzQ2A_48x48.png");
 }
 
-#group-c tr:nth-of-type(5) .name-team,
 .Peru {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/U08wYdQptUaWuweG82L3dw_48x48.png");
 }
 
 /* ----------------------------Group D background------------------------- */
 
-#group-d tr:nth-of-type(2) .name-team,
 .Argentina {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/1xBWyjjkA6vEWopPK3lIPA_48x48.png");
 }
 
-#group-d tr:nth-of-type(3) .name-team,
 .Croatia {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/9toerdOg8xW4CRhDaZxsyw_48x48.png");
 }
 
-#group-d tr:nth-of-type(4) .name-team,
 .Iceland {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/QSlAlD9v6Fm_drC_2z1u8A_48x48.png");
 }
 
-#group-d tr:nth-of-type(5) .name-team,
 .Nigeria {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/2vpR8clrEZdpNjaiHKpg7A_48x48.png");
 }
 
 /* ----------------------------Group E background------------------------- */
 
-#group-e tr:nth-of-type(2) .name-team,
 .Brazil {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/zKLzoJVYz0bb6oAnPUdwWQ_48x48.png");
 }
 
-#group-e tr:nth-of-type(3) .name-team,
 .Costa-Rica {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/ixZiM5pj2IvvYc15k-zfeQ_48x48.png");
 }
 
-#group-e tr:nth-of-type(4) .name-team,
 .Serbia {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/xyh1vmZ-xJH2iJCKjqS1Ow_48x48.png");
 }
 
-#group-e tr:nth-of-type(5) .name-team,
 .Switzerland {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/1hy9ek4dOIffYULM6k1fqg_48x48.png");
 }
 
 /* ----------------------------Group F background------------------------- */
 
-#group-f tr:nth-of-type(2) .name-team,
 .Germany {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/h1FhPLmDg9AHXzhygqvVPg_48x48.png");
 }
 
-#group-f tr:nth-of-type(3) .name-team,
 .South-Korea {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/Uu5pwNmMHGd5bCooKrS3Lw_48x48.png");
 }
 
-#group-f tr:nth-of-type(4) .name-team,
 .Mexico {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/yJF9xqmUGenD8108FJbg9A_48x48.png");
 }
 
-#group-f tr:nth-of-type(5) .name-team,
 .Sweden {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/OkFlRvRsKMWb8Hk20L9Trw_48x48.png");
 }
 
 /* ----------------------------Group G background------------------------- */
 
-#group-g tr:nth-of-type(2) .name-team,
 .Belgium {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/6SF7yEoB60bU5knw-M7R5Q_48x48.png");
 }
 
-#group-g tr:nth-of-type(3) .name-team,
 .England {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png");
 }
 
-#group-g tr:nth-of-type(4) .name-team,
 .Panama {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/JIn8OwxL6KFFiYrKGnL2RQ_48x48.png");
 }
 
-#group-g tr:nth-of-type(5) .name-team,
 .Tunisia {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/Xs33c9XVUJBX0IkeFn_bIw_48x48.png");
 }
 
 /* ----------------------------Group H background------------------------- */
 
-#group-h tr:nth-of-type(2) .name-team,
 .Colombia {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/tXHnA_tDylayacdjWQCJvw_48x48.png");
 }
 
-#group-h tr:nth-of-type(3) .name-team,
 .Japan {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/by4OltvtZz7taxuQtkiP3A_48x48.png");
 }
 
-#group-h tr:nth-of-type(4) .name-team,
 .Poland {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/yTS_Piy3M1wUBnqU0n5aAw_48x48.png");
 }
 
-#group-h tr:nth-of-type(5) .name-team,
 .Senegal {
     background-image: url("https://ssl.gstatic.com/onebox/media/sports/logos/zw3ac5sIbH4DS6zP5auOkQ_48x48.png");
 }
@@ -767,6 +739,7 @@ th.game-desc {
 tr.team-cup:nth-of-type(4) .place_number {
     bottom: 44px;
 }
+
 tr.team-cup:nth-of-type(3) .place_number {
     bottom: 80px;
 }
@@ -779,4 +752,358 @@ tr.team-cup:hover .place_number {
     opacity: 1;
 }
 
+/*----------Tabs----------*/
 
+#tab_1 {
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+}
+
+#tab_2 {
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+}
+
+#tab_1:hover,
+#tab_2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #5b5b5b;
+}
+
+/*-------------------------Play Off--------------------*/
+
+#playoff_grid {
+    position: static;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 960px;
+    overflow: hidden;
+}
+
+#playoff8_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    position: absolute;
+    /*border: 1px solid red;*/
+    max-width: 300px;
+}
+
+#playoff4_container,
+#playoff2_container,
+#playoff1_container {
+    position: relative;
+    top: 0;
+    display: grid;
+    justify-items: end;
+    grid-template-columns: 1fr;
+    width: 100%;
+    min-width: 241px;
+}
+
+#playoff4_container {
+    grid-gap: 153px;
+    /*  border: 1px solid blue;*/
+    max-width: 570px;
+    margin-top: 55px;
+}
+
+#playoff2_container {
+    grid-gap: 393px;
+    /*   border: 1px solid green;*/
+    max-width: 745px;
+    margin-top: 174px;
+    top: -867px;
+}
+
+#playoff1_container {
+    /*  border: 1px solid deeppink;*/
+    height: 919px;
+    align-items: center;
+    min-width: 245px;
+    top: -1610px;
+    right: 2px;
+}
+
+#playoff8_container .play_off_container:nth-child(2),
+#playoff8_container .play_off_container:nth-child(4),
+#playoff8_container .play_off_container:nth-child(6) {
+    margin-bottom: 25px;
+}
+
+#playoff2_container .play_off_container {
+    margin-right: 45px;
+}
+
+#playoff4_container .play_off_container {
+    margin-right: 110px;
+}
+
+.play_off_container {
+    position: relative;
+    max-width: 190px;
+    min-width: 80px;
+}
+
+.play_off {
+    position: relative;
+    background: #fff;
+    z-index: 55;
+    color: black;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    table-layout: fixed;
+    border: 1px solid #E0E0E0;
+    border-radius: 13px;
+    box-shadow: -1px 1px 6px -1px #ccc;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.play_off:after{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    color: #d7d7d7;
+    font-weight: 500;
+    font-size: 17px;
+    z-index: 3;
+    content: '';
+}
+
+#playoff4_container .play_off_container:nth-child(1) .play_off:after{
+    content: '1/4';
+}
+
+#playoff8_container .play_off_container:nth-child(1) .play_off:after{
+    content: '1/8';
+}
+
+#playoff2_container .play_off_container:nth-child(1) .play_off:after{
+    content: '1/2';
+}
+
+#playoff1_container .play_off_container:nth-child(1) .play_off:after{
+    content: 'Final';
+    top: 38px;
+    left: -60px;
+    right: unset;
+}
+
+.play_off:hover {
+    background-color: #FAFAFA;
+    cursor: pointer;
+}
+
+.play_off th.game-desc,
+.play_off .name-team {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Tbd {
+    background-image: url("http://www.clker.com/cliparts/i/u/I/X/t/E/shield.svg");
+    opacity: 0.2;
+}
+
+#playoff1_container .name-team,
+#playoff2_container .name-team,
+#playoff4_container .name-team {
+    background-size: 17px 17px;
+}
+
+#playoff8_container .play_off_container {
+
+}
+
+.play_off th.game-desc {
+    color: #a8a8a8;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.play_off .name-team {
+    min-width: 81%;
+    position: relative;
+    color: #212121;
+    display: block;
+    margin-left: 10px;
+    padding: 3px 2px 3px 32px;
+}
+
+#playoff_grid .play_off td.play_off_score {
+    padding: 3px 0 7px 10px;
+    position: relative;
+    z-index: 6;
+}
+
+.border_14,
+.border_15,
+.border_1_8 {
+    position: absolute;
+    border-top: 3px solid #e2e2e2;
+    border-bottom: 3px solid #E2E2E2;
+    border-right: 3px solid #E2E2E2;
+    background: #fff;
+}
+
+.border_15 {
+    z-index: 2;
+    width: 370px;
+    height: 480px;
+    right: 50%;
+    top: -228%;
+}
+
+.border_14 {
+    z-index: 4;
+    width: 750px;
+    height: 240px;
+    right: 110%;
+    top: -87%;
+}
+
+.border_1_8 {
+    z-index: 5;
+    width: 750px;
+    height: 108px;
+    right: 110%;
+    top: -15%;
+}
+
+@media (max-width: 831px) {
+    #playoff1_container .play_off {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 656px) {
+    #playoff2_container .play_off {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 622px) {
+    #playoff4_container .play_off {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 574px) {
+    #playoff8_container .play_off {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 534px) {
+    #playoff2_container .play_off,
+    #playoff4_container .play_off,
+    #playoff1_container .play_off {
+        max-width: 100px;
+    }
+
+    #playoff2_container .play_off_container {
+        margin-right: 30px;
+    }
+
+    #playoff2_container .name-team,
+    #playoff4_container .name-team,
+    #playoff1_container .name-team {
+        min-width: 60%;
+    }
+    .play_off:after{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 475px) {
+    #playoff8_container .play_off {
+        max-width: 100px;
+    }
+
+    #playoff8_container .name-team {
+        min-width: 60%;
+    }
+}
+
+@media (max-width: 431px) {
+    #playoff2_container .play_off,
+    #playoff4_container .play_off,
+    #playoff1_container .play_off {
+        max-width: 70px;
+    }
+
+    #playoff2_container .play_off_container {
+        margin-right: 10px;
+    }
+
+    #playoff4_container .play_off_container {
+        margin-right: 70px;
+    }
+
+    #playoff4_container .name-team:after,
+    #playoff2_container .name-team:after,
+    #playoff1_container .name-team:after {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        right: -4px;
+        bottom: 0;
+        padding-left: 1px;
+        background-color: #fff;
+        font-size: 14px;
+        content: '';
+        z-index: 3;
+    }
+
+    #playoff4_container .play_off td.play_off_score,
+    #playoff2_container .play_off td.play_off_score,
+    #playoff1_container .play_off td.play_off_score {
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 366px) {
+    #playoff8_container .play_off {
+        max-width: 70px;
+    }
+
+    #playoff8_container .name-team:after {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        right: -4px;
+        bottom: 0;
+        padding-left: 1px;
+        background-color: #fff;
+        font-size: 14px;
+        content: '';
+        z-index: 3;
+    }
+
+    #playoff8_container .play_off td.play_off_score {
+        padding-left: 2px;
+    }
+}
+
+#playoff_grid .loose {
+    color: #838383;
+}
