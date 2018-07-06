@@ -1103,3 +1103,52 @@ tr.team-cup:hover .place_number {
 #playoff_grid .loose {
     color: #838383;
 }
+
+
+/*---------------------Upper---------------------*/
+
+#Go_Top {
+position: fixed;
+right: 1%;
+bottom: -70px;
+z-index: 999;
+transition: bottom .4s;
+}
+
+#Go_Bottom {
+position: fixed;
+right: 5%;
+top: -70px;
+z-index: 999;
+transition: top .4s;
+}
+
+.up {
+bottom: 15px !important;
+}
+
+.down {
+top: 30px !important;
+}
+
+#Go_Top a, #Go_Bottom a {
+display: block;
+text-align: center;
+-webkit-transition: .2s;
+-moz-transition: .2s;
+transition: .2s;
+padding: 26px;
+outline: none;
+opacity: 0.7;
+}
+
+#Go_Top a {
+background: url("https://maxi-boxi.github.io/World_Cup_2018/img/upper-1.gif") no-repeat center;    
+background-size: 50px;
+}
+
+#Go_Top a:hover {
+background: url("https://maxi-boxi.github.io/World_Cup_2018/img/upper-2.gif") no-repeat center;    
+background-size: 51px;
+}
+
