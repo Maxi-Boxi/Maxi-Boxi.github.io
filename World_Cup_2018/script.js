@@ -55,15 +55,63 @@ tableNa.forEach(function (element, z) {
 });
 
 
-/*---anchor links --*/
+/*---anchor links and smoothScroll --*/
+
+function currentYPosition() {
+    // Firefox, Chrome, Opera, Safari
+    if (self.pageYOffset) return self.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop)
+        return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+}
+
+function elmYPosition(eID) {
+    var elm = document.getElementById(eID),
+         y = elm.offsetTop,
+         node = elm;
+    while (node.offsetParent && node.offsetParent != document.body) {
+        node = node.offsetParent;
+        y += node.offsetTop;
+    } return y;
+}
+
+function smoothScroll(eID) {
+    var startY = currentYPosition(),
+        stopY = elmYPosition(eID),
+        distance = stopY > startY ? stopY - startY : startY - stopY;
+    if (distance < 100) {
+        scrollTo(0, stopY); return;
+    }
+    var speed = Math.round(distance / 100);
+    if (speed >= 20) speed = 20;
+    var step = Math.round(distance / 25),
+        leapY = stopY > startY ? startY + step : startY - step,
+        timer = 0;
+    if (stopY > startY) {
+        for ( var i=startY; i<stopY; i+=step ) {
+            setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+            leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+        } return;
+    }
+    for ( var i=startY; i>stopY; i-=step ) {
+        setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+        leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+    }
+    return false;
+}
 
 var tableNum2 = document.querySelectorAll('div.group table'),
     upperGet = document.querySelectorAll('.upper');
 for (var y = 0; y < tableNum2.length; y++) {
     var tableId = detailsOpen[y].getAttribute('id'),
         tableId2 = tableNa[y].getAttribute('id');
-    tableNum2[y].setAttribute("onClick", "document.location='#" + tableId + "'");
-    upperGet[y].setAttribute("onClick", "document.location='#" + tableId2 + "'");
+    // tableNum2[y].setAttribute("onClick", "document.location='#" + tableId + "'");
+    // upperGet[y].setAttribute("onClick", "document.location='#" + tableId2 + "'");
+     tableNum2[y].setAttribute("onClick", "smoothScroll('" + tableId + "');");
+    upperGet[y].setAttribute("onClick", "smoothScroll('" + tableId2 + "');");
 }
 
 /*--plus and minus--*/
@@ -101,15 +149,5 @@ var tab1Get = document.getElementById('tab_1'),
         tab1Get.classList.add("underline");
         tab2Get.classList.remove("underline");
 };
-
-
-
-
-
-
-
-
-
-
 
 

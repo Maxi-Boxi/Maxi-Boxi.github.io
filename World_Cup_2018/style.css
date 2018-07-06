@@ -334,6 +334,7 @@ summary:hover {
     background-color: #F9F9F9;
 }
 
+
 /* ----------------------------Group A background------------------------- */
 
 .egypt {
@@ -909,8 +910,7 @@ tr.team-cup:hover .place_number {
 }
 
 #playoff1_container .name-team,
-#playoff2_container .name-team,
-#playoff4_container .name-team {
+#playoff2_container .name-team {
     background-size: 17px 17px;
 }
 
