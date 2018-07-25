@@ -14,7 +14,7 @@ for (var x = 0; x < tableNum.length; x++) {
     var getNaTeClass = nameTeam[x].getAttribute('class'),
         getNaTeClass2 = nameTeam2[x].getAttribute('class'),
         nT = '+national+team+';
-    tableNum[x].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + getNaTeClass.split(' ')[1] +nT +"+vs+" + getNaTeClass2.split(' ')[1]+nT + "+FIFA+2018')");
+    tableNum[x].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + getNaTeClass.split(' ')[1] +nT +"vs+" + getNaTeClass2.split(' ')[1]+nT + "FIFA+2018')");
 }
 
 /*---links to google play-off----*/
@@ -25,7 +25,7 @@ var getPlofCon = document.querySelectorAll('.play_off'),
 for (var p = 0; p < getPlofCon.length; p++) {
     var PlofTd1Class = getPlofTd1[p].getAttribute('class'),
         PlofTd2Class = getPlofTd2[p].getAttribute('class');
-    getPlofCon[p].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + PlofTd1Class.split(' ')[1] +nT +"+vs+" + PlofTd2Class.split(' ')[1]+nT + "+FIFA+2018')");
+    getPlofCon[p].setAttribute("onClick", "window.open('https://www.google.com/search?q=" + PlofTd1Class.split(' ')[1] +nT +"vs+" + PlofTd2Class.split(' ')[1]+nT + "FIFA+2018')");
 }
 
 /*---details open and close by width----*/
@@ -126,34 +126,54 @@ var minusGet = document.getElementById('minus'),
     plusGet.onclick = function myPlus() {
     for (var p =0; p < detailsOpen.length; p++) {
         detailsOpen[p].removeAttribute("open");
+        $("details").removeAttr("open"); 
     }
 };
 
 /*----------Tabs----------*/
 
 
-var tab1Get = document.getElementById('tab_1'),
-    tab2Get = document.getElementById('tab_2'),
-    playOff = document.getElementById('playoff_container'),
-    matContGet = document.getElementById('matches_container');
-    tab2Get.onclick = function tab2Function() {
-        matContGet.classList.add("hidden");
-        playOff.classList.remove("hidden");
-          tab2Get.classList.add("underline");
-          tab1Get.classList.remove("underline");
-};
+// var tab1Get = document.getElementById('tab_1'),
+//     tab2Get = document.getElementById('tab_2');
+    // playOff = document.getElementById('playoff_container'),
+    // matContGet = document.getElementById('matches_container');
+    // tab2Get.onclick = function tab2Function() {
+        // matContGet.classList.add("hidden");
+        // playOff.classList.remove("hidden");
+          // tab2Get.classList.add("underline");
+          // tab1Get.classList.remove("underline");
+// };
 
-    tab1Get.onclick = function tab1Function() {
-        playOff.classList.add("hidden");
-        matContGet.classList.remove("hidden");
-        tab1Get.classList.add("underline");
-        tab2Get.classList.remove("underline");
-};
+    // tab1Get.onclick = function tab1Function() {
+        // playOff.classList.add("hidden");
+        // matContGet.classList.remove("hidden");
+        // tab1Get.classList.add("underline");
+        // tab2Get.classList.remove("underline");
+// };
 
+
+$(function() {
+    $("#playoff_container").hide();
+      $("#tab_2").click(function() {
+            $("#playoff_container").show();
+             $("#matches_container").hide();
+             $("#tab_1").removeClass("underline");
+              $("#tab_2").attr("class", "underline");
+});
+});
+
+$(function() {
+      $("#tab_1").click(function() {
+           $("#playoff_container").hide();
+            $("#matches_container").show();
+             $("#tab_1").attr("class", "underline");
+             $("#tab_2").removeClass("underline");
+});
+});
 
 /*----------Upper----------*/
 
-jQuery(function(){
+$(function(){
 $("#Go_Top").removeAttr("href");
 if ($(window).scrollTop()>="250") $("#Go_Top").addClass("up")
 $(window).scroll(function(){

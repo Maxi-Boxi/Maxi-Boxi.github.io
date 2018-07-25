@@ -771,10 +771,6 @@ tr.team-cup:hover .place_number {
     cursor: pointer;
 }
 
-.hidden {
-    display: none;
-}
-
 .underline {
     text-decoration: underline;
     color: #5b5b5b;
@@ -904,19 +900,6 @@ tr.team-cup:hover .place_number {
     text-overflow: ellipsis;
 }
 
-.Tbd {
-    background-image: url("http://www.clker.com/cliparts/i/u/I/X/t/E/shield.svg");
-    opacity: 0.2;
-}
-
-#playoff1_container .name-team,
-#playoff2_container .name-team {
-    background-size: 17px 17px;
-}
-
-#playoff8_container .play_off_container {
-
-}
 
 .play_off th.game-desc {
     color: #a8a8a8;
