@@ -289,7 +289,7 @@ h2.matches {
     display: inline-block;
 }
 
-summary {
+.summar {
     position: relative;
     z-index: 3;
     text-align: left;
@@ -310,7 +310,7 @@ summary {
 
 .upper {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     color: #b5b5b5;
     font-size: 19px;
     top: 7px;
@@ -326,12 +326,16 @@ summary {
     color: #333333;
 }
 
-summary:hover .upper {
+.summar:hover .upper {
     opacity: 1;
 }
 
-summary:hover {
+.summar:hover {
     background-color: #F9F9F9;
+}
+
+summary {
+    display: none;
 }
 
 
@@ -887,7 +891,8 @@ tr.team-cup:hover .place_number {
     text-align: unset;
 }
 
-.play_off:hover {
+.play_off:hover, 
+ #playoff_grid .play_off:hover .name-team:after {
     background-color: #FAFAFA;
     cursor: pointer;
 }
@@ -922,7 +927,7 @@ tr.team-cup:hover .place_number {
 #playoff_grid .play_off td.play_off_score {
     padding: 3px 0 7px 10px;
     position: relative;
-    z-index: 6;
+    z-index: 3;
 }
 
 .border_14,
@@ -1042,6 +1047,10 @@ tr.team-cup:hover .place_number {
         font-size: 14px;
         content: '';
         z-index: 3;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
     }
 
     #playoff4_container .play_off td.play_off_score,
@@ -1072,6 +1081,10 @@ tr.team-cup:hover .place_number {
         font-size: 14px;
         content: '';
         z-index: 3;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
     }
 
     #playoff8_container .play_off td.play_off_score {
