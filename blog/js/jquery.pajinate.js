@@ -1,17 +1,17 @@
 ;
 (function($) {
 
-    $(document).ready(function(){
-                $('#container').pajinate({
-                    items_per_page : 5,
-                    num_page_links_to_display : 3,
-                     abort_on_small_lists: true,
-                     // wrap_around: true,
-                    item_container_id : '.alt_content',
-                    nav_panel_id : '.alt_page_navigation'
+    // $(document).ready(function(){
+    //             $('#container').pajinate({
+    //                 items_per_page : 5,
+    //                 num_page_links_to_display : 3,
+    //                  abort_on_small_lists: true,
+    //                  // wrap_around: true,
+    //                 item_container_id : '.alt_content',
+    //                 nav_panel_id : '.alt_page_navigation'
                     
-                });
-            }); 
+    //             });
+    //         }); 
 
 
 
