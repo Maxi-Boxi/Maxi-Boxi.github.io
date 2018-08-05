@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="YouTube_Icon"
+   x="0px"
+   y="0px"
+   viewBox="0 0 91.992622 64.711868"
+   enable-background="new 0 0 1024 721"
+   xml:space="preserve"
+   sodipodi:docname="YouTube_play_buttom_dark_icon_(2013-2017).svg"
+   width="91.992622"
+   height="64.711868"
+   inkscape:version="0.92.1 r15371"><metadata
+   id="metadata14"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs12" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1024"
+   inkscape:window-height="719"
+   id="namedview10"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="3.7032388"
+   inkscape:cx="44.618222"
+   inkscape:cy="44.496736"
+   inkscape:window-x="-4"
+   inkscape:window-y="-4"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="YouTube_Icon" />
+<path
+   id="Triangle"
+   d="M 36.494429,44.285071 61.352432,31.405744 36.494429,18.436352 Z"
+   inkscape:connector-curvature="0"
+   style="fill:#ffffff;stroke-width:0.09006523" />
+<path
+   id="The_Sharpness"
+   d="m 36.494429,18.436352 21.795785,14.55454 3.062218,-1.585148 z"
+   inkscape:connector-curvature="0"
+   style="clip-rule:evenodd;opacity:0.12000002;fill-rule:evenodd;stroke-width:0.09006523" />
+<g
+   id="Lozenge"
+   transform="matrix(0.09006523,0,0,0.09006523,-0.16211741,-0.1170848)">
+	<g
+   id="g6">
+		<path
+   d="m 1013,156.3 c 0,0 -10,-70.4 -40.6,-101.4 C 933.6,14.2 890,14 870.1,11.6 727.1,1.3 512.7,1.3 512.7,1.3 h -0.4 c 0,0 -214.4,0 -357.4,10.3 C 135,14 91.4,14.2 52.6,54.9 22,85.9 12,156.3 12,156.3 c 0,0 -10.2,82.6 -10.2,165.3 v 77.5 c 0,82.7 10.2,165.3 10.2,165.3 0,0 10,70.4 40.6,101.4 38.9,40.7 89.9,39.4 112.6,43.7 81.7,7.8 347.3,10.3 347.3,10.3 0,0 214.6,-0.3 357.6,-10.7 20,-2.4 63.5,-2.6 102.3,-43.3 30.6,-31 40.6,-101.4 40.6,-101.4 0,0 10.2,-82.7 10.2,-165.3 v -77.5 c 0,-82.7 -10.2,-165.3 -10.2,-165.3 z M 407,493 V 206 l 276,144 z"
+   id="path4"
+   inkscape:connector-curvature="0"
+   style="fill:#282928" />
+	</g>
+</g>
+</svg>
