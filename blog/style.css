@@ -930,6 +930,7 @@ th.game-desc {
 }
 
 .timegame {
+    position: relative;
     border-left: 1px solid #F2F2F2;
     width: 10%;
     white-space: nowrap;
@@ -958,6 +959,19 @@ th.game-desc {
 
 .russia:hover {
     background-color: #FAFAFA;
+}
+
+.yotube-button {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    opacity: 0.7;
+    filter: contrast(100%) sepia(100%) hue-rotate(312deg) brightness(3.8) saturate(1400%);
+    cursor: pointer;
+}
+
+.yotube-button:hover {
+    opacity: 1;
 }
 
 /*-------------------------Adaptive----------------------*/
@@ -1098,7 +1112,6 @@ th.game-desc {
 /*----------------Read all----------------*/
 
 .read-all {
-    height: 100%;
     padding-bottom: 20px;
     margin-top: 10px;
 }
