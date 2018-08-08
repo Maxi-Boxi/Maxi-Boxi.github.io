@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
     var preloader    = $('#preloader'), // селектор прелоадера
-        imagesCount  = $('img').length, // количество изображений
+        imagesCount  = $('iframe').length, // количество изображений
         dBody        = $('body'), //обращаемся к body
         percent      = 100 / imagesCount, // количество % на одну картинку
         progress     = 0, // точка отсчета
@@ -25,8 +25,8 @@ $(document).ready(function () {
         }).circularProgress('animate', percent, 1000);
 
         for (var i = 0; i < imagesCount; i++) { // создаем клоны изображений
-            var img_copy        = new Image();
-            img_copy.src        = document.images[i].src;
+            // var img_copy        = document.createElement('iframe');
+            img_copy            = $('iframe')[i];
             img_copy.onload     = img_load;
             img_copy.onerror    = img_load;
         }
