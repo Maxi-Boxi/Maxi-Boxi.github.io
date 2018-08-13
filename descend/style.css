@@ -367,6 +367,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01020a', end
     color: pink;
       text-decoration: none;
       font-style: italic;
+        font-size: 4vmin;
 }
 
 a:visited {
@@ -527,8 +528,8 @@ a:hover {
     }
      
     50% {
-         filter: drop-shadow(2px 1px 18px pink);
-         -webkit-filter: drop-shadow(2px 1px 18px pink);
+         filter: drop-shadow(0 0 4vmin pink);
+         -webkit-filter: drop-shadow(0.1vmin 0.1vmin 4vmin pink);
          
      }
       100% {
