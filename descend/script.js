@@ -1,28 +1,24 @@
-// (function () {
-//   var scaleY = 0,
-//       rotateX = 0;
-//
-//   document.onkeydown = function (e) {
-//          if (e.keyCode === 37) scaleY -= 1
-//     else if (e.keyCode === 38) rotateX += 1
-//     else if (e.keyCode === 39) scaleY += 1
-//     else if (e.keyCode === 40) rotateX -= 1
-//
-//     document.querySelector('#particleCanvas-Blue').style.transform =
-//       'rotateY(' + scaleY + 'deg)'+
-//       'rotateX(' + rotateX + 'deg)';
-//     }
-// })();
+(function () {
+    var tracks = ['track1.mp3', 'track2.mp3', 'track3.mp3', 'track4.mp3', 'track5.mp3', 'track6.mp3'],
+        player = document.getElementById('player'),
+        current = 0;
+    player.src = tracks[0];
+    player.onended = function () {
+        current++;
+        if (current >= tracks.length) current = 0;
+        player.src = tracks[current];
+        player.play();
+    }
+})();
 
 $(function () {
-     $("p, a, .box-button, .circle-button, .container-button").css({'display':'none', 'opacity':'0'});
-    
+    $("p, a, .box-button, .circle-button, .container-button").css({'display': 'none', 'opacity': '0'});
+
     $(".circle-container").click(function () {
         $(".back, .back2, .back3, .back4, .back5, .audio-container, #particleCanvas-White, p").css('pointer-events', 'none');
-
         $('audio').trigger('play');
 
-       /*------first animation------*/
+        /*------first animation------*/
 
         setTimeout(function () {
             $(".name").css('opacity', '1');
@@ -33,14 +29,11 @@ $(function () {
         }, 2500);
 
         setTimeout(function () {
-
             $(".box1").addClass('box1-end').removeClass('box1Anim');
         }, 3000);
 
         $(".triangle-container").addClass('triangle-container-anim');
         $(".lines-container, .box1, .back1, .triangle").addClass('opa');
-
-
         $(".album-name1").addClass('albumname1Anim');
         $(".circle").addClass('circleAnim');
         $(".box1").addClass('box1Anim');
@@ -57,59 +50,50 @@ $(function () {
             $(".back, .back2, .back3").addClass('neonAnim');
             $('#particleCanvas-White').css('opacity', '0.5');
             $('#particleCanvas-Blue').css('opacity', '1');
-
         }, 13500);
 
         setTimeout(function () {
-            $("p, a, .box-button, .circle-button, .container-button").css('display','block').animate({opacity: '1'}, 3000);
+            $("p, a, .box-button, .circle-button, .container-button").css('display', 'block').animate({opacity: '1'}, 3000);
         }, 17500);
-    }); /*end first animation*/
-
-    //   $(".audio-container").click(function() {
-
-    //         $('audio').trigger('pause');
-    // });
+    });
 
     $(".circle-button").click(function () {
-        $(".circle-button").toggleClass('buttonClickColor');
+        $(this).toggleClass('buttonClickColor');
         $(".back2").addClass('matrixAnim');
 
-         if ($('.circle-button').hasClass("buttonClickColor")) {
-              $(".back2").css('animation-play-state', 'running');
-            
+        if ($(this).hasClass("buttonClickColor")) {
+            $(".back2").css('animation-play-state', 'running');
+
         } else {
-
-             $(".back2").css('animation-play-state', 'paused');
+            $(".back2").css('animation-play-state', 'paused');
         }
-     });
+    });
 
-     $(".box-button").click(function () {
-        $(".box-button").toggleClass('buttonClickColor');
+    $(".box-button").click(function () {
+        $(this).toggleClass('buttonClickColor');
         $(".back, .back3").addClass('matrixAnim');
 
-         if ($('.box-button').hasClass("buttonClickColor")) {
-              $(".back, .back3").css('animation-play-state', 'running');
-            
+        if ($(this).hasClass("buttonClickColor")) {
+            $(".back, .back3").css('animation-play-state', 'running');
+
         } else {
-
-             $(".back, .back3").css('animation-play-state', 'paused');
+            $(".back, .back3").css('animation-play-state', 'paused');
         }
-     });
+    });
 
-     $(".container-button").click(function () {
-        $(".container-button").toggleClass('buttonClickColor');
+    $(".container-button").click(function () {
+        $(this).toggleClass('buttonClickColor');
         $(".back4").addClass('matrixAnim');
 
-         if ($('.container-button').hasClass("buttonClickColor")) {
-              $(".back4").css('animation-play-state', 'running');
-            
+        if ($(this).hasClass("buttonClickColor")) {
+            $(".back4").css('animation-play-state', 'running');
+
         } else {
-
-             $(".back4").css('animation-play-state', 'paused');
+            $(".back4").css('animation-play-state', 'paused');
         }
-     });
+    });
 
- 
+
 });
 
 
@@ -125,7 +109,7 @@ $(function () {
 
             $('.back4, .back3, .back2, .back, .back5').addClass('left');
 
-             $('a, .box-button, .circle-button, .container-button').css('pointer-events', 'auto');
+            $('a, .box-button, .circle-button, .container-button').css('pointer-events', 'auto');
 
             $('.audio-container').addClass('audio-container-left');
         } else {
@@ -136,12 +120,6 @@ $(function () {
             $('.audio-container').removeClass('audio-container-left');
         }
     }, 100);
-
-
-});
-
-
-$(function () {
 
     setInterval(function () {
         var back1Height2 = 0,
