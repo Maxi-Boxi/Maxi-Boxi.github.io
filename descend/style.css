@@ -22,7 +22,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 
 .back1,
@@ -94,8 +94,13 @@ h1 {
 }
 
 .top {
+    top: -32vmin;
+}
+
+.top2 {
     top: -40vmin;
 }
+
 
 .circle,
 .triangle,
@@ -242,7 +247,7 @@ h1 {
 .name {
     max-width: 65vmin;
     max-height: 40vmin;
-    background: url("https://maxi-boxi.github.io/descend/name.png") no-repeat;
+    background: url("name.png") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-transform: rotateZ(1.2deg);
@@ -260,7 +265,7 @@ h1 {
     position: absolute;
     max-width: 33vmin;
     max-height: 33vmin;
-    background: url("https://maxi-boxi.github.io/descend/album-name.png") no-repeat;
+    background: url("album-name.png") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     left: 79.2vmin;
@@ -358,6 +363,14 @@ h1 {
 }
 
 .audio-container-top {
+    top: 107vmin;
+    opacity: 0.6;
+    -webkit-transition: opacity 2s ease-out 1.5s, top 1.5s ease-in-out;
+    -o-transition: opacity 2s ease-out 1.5s, top 1.5s ease-in-out;
+    transition: opacity 2s ease-out 1.5s, top 1.5s ease-in-out;
+}
+
+.audio-container-top2 {
     top: 115vmin;
     opacity: 0.6;
     -webkit-transition: opacity 2s ease-out 1.5s, top 1.5s ease-in-out;
