@@ -1,15 +1,15 @@
-(function () {
-    var tracks = ['track1.mp3', 'track2.mp3', 'track3.mp3', 'track4.mp3', 'track5.mp3', 'track6.mp3'],
-        player = document.getElementById('player'),
-        current = 0;
-    player.src = tracks[0];
-    player.onended = function () {
-        current++;
-        if (current >= tracks.length) current = 0;
-        player.src = tracks[current];
-        player.play();
-    }
-})();
+$(function () {
+    var tracks = ['track1.mp3', 'track2.mp3', 'track3.mp3', 'track4.mp3', 'track5.mp3', 'track6.mp3'];
+    var currentTrack = 0;
+
+    $('audio').on('ended', function(e) {
+        currentTrack++;
+        if (currentTrack > tracks.length - 1)
+            currentTrack = 0;
+        e.target.src = tracks[currentTrack];
+        e.target.play();
+    });
+});
 
 $(function () {
     $("p, a, .box-button, .circle-button, .container-button").css({'display': 'none', 'opacity': '0'});
@@ -98,6 +98,8 @@ $(function () {
 
 
 $(function () {
+    var bb2b3b4b5 = $('.back4, .back3, .back2, .back, .back5'),
+        abb_cb_cob = $('a, .box-button, .circle-button, .container-button');
 
     setInterval(function () {
         var back1Width2 = 0,
@@ -107,38 +109,45 @@ $(function () {
 
         if (back1Width2 > linesCon2 && $('.back').hasClass("matrix")) {
 
-            $('.back4, .back3, .back2, .back, .back5').addClass('left');
-
-            $('a, .box-button, .circle-button, .container-button').css('pointer-events', 'auto');
-
+            bb2b3b4b5.addClass('left');
+            abb_cb_cob.css('pointer-events', 'auto');
             $('.audio-container').addClass('audio-container-left');
         } else {
 
-            $('.back4, .back3, .back2, .back, .back5').removeClass('left');
-            $('a, .box-button, .circle-button, .container-button').css('pointer-events', '');
-
+            bb2b3b4b5.removeClass('left');
+            abb_cb_cob.css('pointer-events', '');
             $('.audio-container').removeClass('audio-container-left');
         }
     }, 100);
 
     setInterval(function () {
         var back1Height2 = 0,
-            linesCon1 = 1.7;
+            linesCon1 = 1.57,
+            linesCon3 = 1.7;
         linesCon1 *= $('.lines-container').height();
+        linesCon3 *= $('.lines-container').height();
         back1Height2 += $('.back1').height();
 
-        if (back1Height2 > linesCon1 && $('.back').hasClass("matrix")) {
-
-            $('.back4, .back3, .back2, .back, .back5').addClass('top');
-
+        if (back1Height2 > linesCon1 && back1Height2 < linesCon3 && $('.back').hasClass("matrix")) {
+            bb2b3b4b5.removeClass('top2');
+            $('.audio-container').removeClass('audio-container-top2');
+            bb2b3b4b5.addClass('top');
             $('.audio-container').addClass('audio-container-top');
-            $('a, .box-button, .circle-button, .container-button').addClass('pointerEvent');
-        } else {
+            abb_cb_cob.addClass('pointerEvent');
 
-            $('.back4, .back3, .back2, .back, .back5').removeClass('top');
-
+        } else if (back1Height2 > linesCon3 && $('.back').hasClass("matrix")) {
             $('.audio-container').removeClass('audio-container-top');
-            $('a, .box-button, .circle-button, .container-button').removeClass('pointerEvent');
+            bb2b3b4b5.removeClass('top');
+            bb2b3b4b5.addClass('top2');
+            $('.audio-container').addClass('audio-container-top2');
+            abb_cb_cob.addClass('pointerEvent');
+
+        } else {
+            bb2b3b4b5.removeClass('top2');
+            $('.audio-container').removeClass('audio-container-top2');
+            bb2b3b4b5.removeClass('top');
+            $('.audio-container').removeClass('audio-container-top');
+            abb_cb_cob.removeClass('pointerEvent');
         }
     }, 100);
 
