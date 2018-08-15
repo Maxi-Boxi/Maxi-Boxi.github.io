@@ -129,24 +129,18 @@ $(function () {
         back1Height2 += $('.back1').height();
 
         if (back1Height2 > linesCon1 && back1Height2 < linesCon3 && $('.back').hasClass("matrix")) {
-            bb2b3b4b5.removeClass('top2');
-            $('.audio-container').removeClass('audio-container-top2');
-            bb2b3b4b5.addClass('top');
-            $('.audio-container').addClass('audio-container-top');
+            bb2b3b4b5.removeClass('top2').addClass('top');
+            $('.audio-container').removeClass('audio-container-top2').addClass('audio-container-top');
             abb_cb_cob.addClass('pointerEvent');
 
         } else if (back1Height2 > linesCon3 && $('.back').hasClass("matrix")) {
-            $('.audio-container').removeClass('audio-container-top');
-            bb2b3b4b5.removeClass('top');
-            bb2b3b4b5.addClass('top2');
-            $('.audio-container').addClass('audio-container-top2');
+            $('.audio-container').removeClass('audio-container-top').addClass('audio-container-top2');
+            bb2b3b4b5.removeClass('top').addClass('top2');
             abb_cb_cob.addClass('pointerEvent');
 
         } else {
-            bb2b3b4b5.removeClass('top2');
-            $('.audio-container').removeClass('audio-container-top2');
-            bb2b3b4b5.removeClass('top');
-            $('.audio-container').removeClass('audio-container-top');
+            bb2b3b4b5.removeClass('top2').removeClass('top');
+            $('.audio-container').removeClass('audio-container-top2').removeClass('audio-container-top');
             abb_cb_cob.removeClass('pointerEvent');
         }
     }, 100);
