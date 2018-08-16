@@ -8,6 +8,7 @@ $(function () {
             currentTrack = 0;
         e.target.src = tracks[currentTrack];
         e.target.play();
+        $('audio').trigger('play');
     });
 });
 
@@ -112,6 +113,7 @@ $(function () {
             bb2b3b4b5.addClass('left');
             abb_cb_cob.css('pointer-events', 'auto');
             $('.audio-container').addClass('audio-container-left');
+
         } else {
 
             bb2b3b4b5.removeClass('left');

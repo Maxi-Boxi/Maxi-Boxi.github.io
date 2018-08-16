@@ -7,6 +7,7 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow: hidden;
 }
 
 h1 {
@@ -22,7 +23,6 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    overflow: auto;
 }
 
 .back1,
@@ -44,7 +44,7 @@ h1 {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100vw;
-    height: 102vh;
+    height: 100vh;
     position: absolute;
     left: 0;
     top: 0;
@@ -815,10 +815,29 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     opacity: 0;
     -webkit-transition: opacity 10s ease-out 6s;
     -o-transition: opacity 10s ease-out 6s;
     transition: opacity 10s ease-out 6s;
+}
+
+/*----------------media----------------*/
+
+@media (max-width: 565px) {
+
+.back1,
+.back,
+.back2,
+.back3,
+.back4,
+.back5,
+#particleCanvas-White,
+#particleCanvas-Blue {
+    height: 102vh;
+    }
+    body {
+    overflow: auto;
+    }
 }
