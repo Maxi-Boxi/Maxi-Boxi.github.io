@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg8" viewBox="0 0 162.91 162.91" height="615.71" width="615.71">
+  <defs id="defs2">
+    <linearGradient id="linearGradient4588">
+      <stop stop-color="#f5eefa" offset="0" id="stop4578"/>
+      <stop stop-color="#d973ac" id="stop4596" offset=".14"/>
+      <stop stop-color="#86438b" id="stop4592" offset=".27"/>
+      <stop stop-color="#9b308a" offset=".49" id="stop4582"/>
+      <stop stop-color="#763484" id="stop4590" offset=".72"/>
+      <stop stop-color="#d965a5" offset=".84" id="stop4594"/>
+      <stop stop-color="#fbeff6" offset="1" id="stop4586"/>
+    </linearGradient>
+    <linearGradient gradientTransform="translate(57.2 105.51) scale(.38482)" y2="115.44" x2="304.65" y1="201.65" x1="-118.68" gradientUnits="userSpaceOnUse" id="linearGradient4576" xlink:href="#linearGradient4588"/>
+    <linearGradient y2="115.44" x2="304.65" y1="201.65" x1="-118.68" gradientTransform="translate(57.2 105.51) scale(.38482)" gradientUnits="userSpaceOnUse" id="linearGradient4549" xlink:href="#linearGradient4588"/>
+    <linearGradient y2="115.44" x2="304.65" y1="201.65" x1="-118.68" gradientTransform="translate(57.2 105.51) scale(.38482)" gradientUnits="userSpaceOnUse" id="linearGradient4551" xlink:href="#linearGradient4588"/>
+    <linearGradient y2="115.44" x2="304.65" y1="201.65" x1="-118.68" gradientTransform="translate(57.2 105.51) scale(.38482)" gradientUnits="userSpaceOnUse" id="linearGradient4553" xlink:href="#linearGradient4588"/>
+  </defs>
+  <g transform="translate(81.32 81.32)" id="Layer1">
+    <g id="Layer2">
+      <g transform="translate(-92.85 -171.38)" id="g64" stroke-width="7.81">
+        <path id="path4563" d="M11.53 183.1l162.9-33.16v1.16l-162.9 33.2z" fill="url(#linearGradient4576)"/>
+      </g>
+    </g>
+  </g>
+</svg>

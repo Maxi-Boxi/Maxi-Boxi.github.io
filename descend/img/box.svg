@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg8"
+   viewBox="0 0 162.906 162.906"
+   height="162.9059mm"
+   width="162.90617mm">
+  <metadata
+     id="metadata77">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient6207">
+      <stop
+         stop-color="#010001"
+         offset="0"
+         id="stop6199" />
+      <stop
+         stop-color="#010028"
+         id="stop4533"
+         offset="0.09872877" />
+      <stop
+         stop-color="#00043d"
+         offset="0.29523021"
+         id="stop4537" />
+      <stop
+         stop-color="#010e43"
+         offset="0.50573128"
+         id="stop6203" />
+      <stop
+         stop-color="#1d336c"
+         id="stop4535"
+         offset="0.76555443" />
+      <stop
+         stop-color="#3e5ca4"
+         offset="1"
+         id="stop6205" />
+    </linearGradient>
+    
+    <linearGradient
+       gradientTransform="matrix(0.38482,0,0,0.38482,-35.648669,-65.86853)"
+       gradientUnits="userSpaceOnUse"
+       y2="83.268845"
+       x2="-22.321321"
+       y1="298.37909"
+       x1="21.585272"
+       id="linearGradient6211"
+       xlink:href="#linearGradient6207" />
+    
+  </defs>
+  <g
+     transform="translate(81.320532,81.32053)"
+     id="Layer1">
+    <g
+       id="Layer2">
+      <path
+         d="m 46.022331,33.99647 -73.365,14.957 -16.896,-82.779 73.463,-14.864 z"
+         id="rect4498"
+         style="display:inline;fill:url(#linearGradient6211);stroke-width:16.00552177" />
+    </g>
+  </g>
+</svg>

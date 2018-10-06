@@ -27,16 +27,16 @@ particlesJS("particleCanvas-Blue", {
 		},
 		opacity: {
 			value: 0.5,
-			random: false,
+			random: true,
 			anim: {
 				enable: true,
-				speed: 1,
+				speed: 0.2,
 				opacity_min: 0.1,
 				sync: false
 			}
 		},
 		size: {
-			value: 10,
+			value: 12,
 			random: true,
 			anim: {
 				enable: false,
@@ -68,15 +68,15 @@ particlesJS("particleCanvas-Blue", {
 		}
 	},
 	interactivity: {
-		detect_on: "canvas",
+		detect_on: "window",
 		events: {
 			onhover: {
-				enable: false,
-				mode: "grab"
+				enable: true,
+				mode: "bubble"
 			},
 			onclick: {
-				enable: false,
-				mode: "push"
+				enable: true,
+				mode: "repulse"
 			},
 			resize: true
 		},
@@ -88,14 +88,14 @@ particlesJS("particleCanvas-Blue", {
 				}
 			},
 			bubble: {
-				distance: 1500,
-				size: 40,
+				distance: 100,
+				size: 15,
 				duration: 7.272727272727273,
-				opacity: 0.3676323676323676,
-				speed: 3
+				opacity: 0.5676323676323676,
+				speed: 40
 			},
 			repulse: {
-				distance: 50,
+				distance: 200,
 				duration: 0.4
 			},
 			push: {
@@ -138,9 +138,9 @@ particlesJS("particleCanvas-White", {
 		},
 		opacity: {
 			value: 0.5,
-			random: true,
+			random: false,
 			anim: {
-				enable: false,
+				enable: true,
 				speed: 0.2,
 				opacity_min: 0,
 				sync: false
@@ -179,15 +179,15 @@ particlesJS("particleCanvas-White", {
 		}
 	},
 	interactivity: {
-		detect_on: "canvas",
+		detect_on: "window",
 		events: {
 			onhover: {
-				enable: false,
+				enable: true,
 				mode: "grab"
 			},
 			onclick: {
-				enable: false,
-				mode: "push"
+				enable: true,
+				mode: "repulse"
 			},
 			resize: true
 		},
@@ -206,7 +206,7 @@ particlesJS("particleCanvas-White", {
 				speed: 3
 			},
 			repulse: {
-				distance: 50,
+				distance: 300,
 				duration: 0.4
 			},
 			push: {
