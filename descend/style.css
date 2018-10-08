@@ -23,7 +23,11 @@ body {
     right: 0;
     bottom: 0;
     background-color: #000;
-     overflow: hidden;
+}
+
+.back {
+      /*border: solid 1px silver;*/
+      overflow: hidden;
 }
 
 .back,
@@ -48,7 +52,7 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    /*  border: solid 1px red;*/
+    /*  border: solid 1px green;*/
     -webkit-transition: height 1.5s ease-in-out, margin 1.5s ease-in-out;
     -o-transition: height 1.5s ease-in-out, margin 1.5s ease-in-out;
     transition: height 1.5s ease-in-out, margin 1.5s ease-in-out;
