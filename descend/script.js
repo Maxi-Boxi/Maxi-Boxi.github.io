@@ -165,14 +165,14 @@ $(function () {
 
         //------------ jellyfish
 
-        setTimeout(function () {
+        // setTimeout(function () {
 
-            $(".jellyfish").css('display', 'block');
-        }, 40000);
-        setTimeout(function () {
+        //     $(".jellyfish").css('display', 'block');
+        // }, 40000);
+        // setTimeout(function () {
 
-            $(".jellyfish").css('display', 'none');
-        }, 69400);
+        //     $(".jellyfish").css('display', 'none');
+        // }, 69400);
 
     });
 });

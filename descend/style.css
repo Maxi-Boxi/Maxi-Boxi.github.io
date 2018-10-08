@@ -25,11 +25,6 @@ body {
     background-color: #000;
 }
 
-.back {
-      /*border: solid 1px silver;*/
-      overflow: hidden;
-}
-
 .back,
 .back5,
 .greyBack,
@@ -62,7 +57,6 @@ body {
     -webkit-transition: height 1.5s ease-in-out, margin 1.5s ease-in-out;
     -o-transition: height 1.5s ease-in-out, margin 1.5s ease-in-out;
     transition: height 1.5s ease-in-out, margin 1.5s ease-in-out;
-
     height: 80vh;
     margin: 5vmin 0;
 
