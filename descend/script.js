@@ -207,36 +207,36 @@ $(function () {
 
     }, 100);
 
-    setInterval(function () {
-        var back1Height = $('.container').height(),
-            back1Width = $('.container').width();
+    // setInterval(function () {
+    //     var back1Height = $('.container').height(),
+    //         back1Width = $('.container').width();
 
-        if (back1Width > back1Height) {
+    //     if (back1Width > back1Height) {
 
-            $(".back, .back5, .greyBack, .gradientBack").addClass('black_lines');
-            $(".img-container").addClass('black_lines_2');
-            $(".audio-container").addClass('black_lines_3');
-            $("a").addClass('black_lines_4');
-            $("#particleCanvas-Blue, #particleCanvas-White").addClass('black_lines_5');
-            $(".back5").addClass('back5_black_lines');
-            $("li").addClass('li_black_lines');
+    //         $(".back, .back5, .greyBack, .gradientBack").addClass('black_lines');
+    //         $(".img-container").addClass('black_lines_2');
+    //         $(".audio-container").addClass('black_lines_3');
+    //         $("a").addClass('black_lines_4');
+    //         $("#particleCanvas-Blue, #particleCanvas-White").addClass('black_lines_5');
+    //         $(".back5").addClass('back5_black_lines');
+    //         $("li").addClass('li_black_lines');
 
-        } else {
+    //     } else {
 
-            bb2b3b4b5.removeClass('left');
-            abb_cb_cob.css('pointer-events', '');
-            $('.audio-container').removeClass('audio-container-left');
+    //         bb2b3b4b5.removeClass('left');
+    //         abb_cb_cob.css('pointer-events', '');
+    //         $('.audio-container').removeClass('audio-container-left');
 
-            $(".back, .back5, .greyBack, .gradientBack").removeClass('black_lines');
-            $(".img-container").removeClass('black_lines_2');
-            $(".audio-container").removeClass('black_lines_3');
-            $("a").removeClass('black_lines_4');
-            $("#particleCanvas-Blue, #particleCanvas-White").removeClass('black_lines_5');
-            $(".back5").removeClass('back5_black_lines');
-            $("li").removeClass('li_black_lines');
-        }
+    //         $(".back, .back5, .greyBack, .gradientBack").removeClass('black_lines');
+    //         $(".img-container").removeClass('black_lines_2');
+    //         $(".audio-container").removeClass('black_lines_3');
+    //         $("a").removeClass('black_lines_4');
+    //         $("#particleCanvas-Blue, #particleCanvas-White").removeClass('black_lines_5');
+    //         $(".back5").removeClass('back5_black_lines');
+    //         $("li").removeClass('li_black_lines');
+    //     }
 
-    }, 100);
+    // }, 100);
 
 
     setInterval(function () {
